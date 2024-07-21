@@ -22,16 +22,17 @@
               <a class="nav-link" href="big4.html">Players</a>
               <a class="nav-link" href="historia.html">História</a>
             </div>
+
+
             <div class="ms-auto d-flex align-items-center">
-              <div id="user-profile" class="dropdown" style="display: none;">
-                <button class="btn btn-secondary dropdown-toggle" id="userProfileDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="images/default-avatar.png" alt="Profile" class="rounded-circle" id="profile-pic">
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="userProfileDropdown">
-                  <li><a class="dropdown-item" href="#" id="logout">Odhlásiť sa</a></li>
-                </ul>
+              <div id="user-profile" class="dropdown">
+                <span id="user-name" class="me-3"></span>
+                <!-- Tlačidlo na odhlásenie -->
+                <button id="logout" class="btn btn-danger">Odhlásiť sa</button>
               </div>
             </div>
+            
+            
           </div>
         </div>
       </nav>
@@ -40,7 +41,7 @@
         <h1 class="mt-5">M&P Premier League 2024/25</h1>
 
         <!-- Formulár na prihlásenie -->
-        <form id="login-form">
+        <form id="login-form" style="display: none;">
           <label for="username">Meno:</label>
           <input type="text" id="username" required>
           <label for="password">Heslo:</label>

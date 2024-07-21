@@ -84,35 +84,3 @@ h1{
 }
 /* --------------------------------------------------------- */
   
-/* Profilový obrázok */
-#user-profile img {
-  border: 2px solid #ccc; /* Rámček okolo obrázka */
-  width: 40px; /* Nastavte šírku obrázka */
-  height: 40px; /* Nastavte výšku obrázka */
-  border-radius: 50%; /* Zaoblenie obrázka na kruh */
-}
-
-/* Umiestnenie profilového obrázka a tlačidla na odhlásenie */
-#user-profile {
-  position: relative;
-}
-
-#user-profile .dropdown-menu {
-  min-width: 150px; /* Šírka ponuky */
-  margin-top: 10px; /* Vzdialenosť od tlačidla */
-}
-
-/* Tlačidlo na odhlásenie */
-#user-profile .dropdown-item#logout {
-  padding-left: 20px; /* Odstup tlačidla od okraja */
-}
-
-/* Skryť výstupný trojuholník na tlačidle */
-#user-profile .dropdown-toggle::after {
-  display: none;
-}
-
-
-
-
-  
