@@ -1,0 +1,118 @@
+body {
+    background-color: #10162F;
+    filter: brightness(80%);
+}
+
+h1{
+    color: white;
+    font-size: 5em;
+    text-align: center;
+}
+
+/* Zmena farby pozadia navbaru */
+.navbar {
+    background-color: #f8f9fa; /* Vaša preferovaná farba */
+  }
+
+.navbar-nav .nav-link {
+    color: black;
+    font-size: 1.3em;
+  }
+
+  .navbar-brand {
+    color: black;
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+
+  .navbar-nav .nav-link:not(:first-child) {
+    margin-left: 1em; 
+  }
+
+
+/* -------------------------------Štýly pre profil používateľa-------------------------- */
+#user-profile {
+  display: none;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+#user-profile .dropdown-menu {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+#user-profile .dropdown-menu a {
+  color: #333;
+}
+
+#user-profile .dropdown-menu a:hover {
+  background-color: #f8f9fa;
+}
+
+.profile-icon {
+  cursor: pointer;
+  font-size: 24px;
+  color: #007bff;
+}
+
+/* Štýly pre login form */
+#login-form {
+  margin-top: 20px;
+}
+
+#login-form label {
+  display: block;
+  margin: 5px 0;
+}
+
+#login-form input {
+  margin-bottom: 10px;
+}
+
+#login-form button {
+  display: block;
+  margin-top: 10px;
+}
+/* --------------------------------------------------------- */
+  
+/* Profilový obrázok */
+#user-profile img {
+  border: 2px solid #ccc; /* Rámček okolo obrázka */
+  width: 40px; /* Nastavte šírku obrázka */
+  height: 40px; /* Nastavte výšku obrázka */
+  border-radius: 50%; /* Zaoblenie obrázka na kruh */
+}
+
+/* Umiestnenie profilového obrázka a tlačidla na odhlásenie */
+#user-profile {
+  position: relative;
+}
+
+#user-profile .dropdown-menu {
+  min-width: 150px; /* Šírka ponuky */
+  margin-top: 10px; /* Vzdialenosť od tlačidla */
+}
+
+/* Tlačidlo na odhlásenie */
+#user-profile .dropdown-item#logout {
+  padding-left: 20px; /* Odstup tlačidla od okraja */
+}
+
+/* Skryť výstupný trojuholník na tlačidle */
+#user-profile .dropdown-toggle::after {
+  display: none;
+}
+
+
+
+
+  
