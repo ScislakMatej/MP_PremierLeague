@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const session = require('express-session');
+const fs = require('fs');
 
 const app = express();
 
@@ -81,6 +82,46 @@ app.get('/login/status', (req, res) => {
         res.json({ success: false });
     }
 });
+
+///////////////////////zapis udajov do suboru///////////////////////////
+
+const formatDate = (date) => {
+    const day = String(date.getDate()).padStart(2, '0');
+    const month = String(date.getMonth() + 1).padStart(2, '0'); // Mesiace sú od 0
+    const year = date.getFullYear();
+    const hours = String(date.getHours()).padStart(2, '0');
+    const minutes = String(date.getMinutes()).padStart(2, '0');
+    const seconds = String(date.getSeconds()).padStart(2, '0');
+    return `${day}.${month}.${year}, ${hours}:${minutes}:${seconds}`;
+};
+
+
+// Endpoint na zápis údajov do súboru
+app.post('/submit', (req, res) => {
+    const data = req.body;
+    const filePath = path.join(__dirname, 'data.txt');
+    const timestamp = formatDate(new Date());
+    const content = data.map(item => 
+        `User: ${item.user}, ID: ${item.id}, Text: ${item.text}, Timestamp: ${timestamp}`
+    ).join('\n');
+
+    fs.appendFile(filePath, content + '\n', (err) => {
+        if (err) {
+            console.error('Error writing to file:', err);
+            res.status(500).json({ success: false, message: 'Internal Server Error' });
+        } else {
+            res.status(200).json({ success: true, message: 'Data saved successfully' });
+        }
+    });
+});
+//////////////////////////////////////////////////
+
+
+
+
+
+
+
 
 // Spustenie servera
 const PORT = process.env.PORT || 3005;
