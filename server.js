@@ -3,21 +3,25 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const session = require('express-session');
 const fs = require('fs');
+const moment = require('moment-timezone');
 
+// Inicializácia Express
 const app = express();
+app.use(express.json()); // Načítanie JSON údajov
+app.use(bodyParser.json()); // Načítanie JSON údajov
 
 // Nastavenie statického priečinka pre statické súbory (Bootstrap, CSS, JS, atď.)
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(bodyParser.json());
 
 // Nastavenie express-session
 app.use(session({
     secret: 'your-secret-key', // Zmeňte na svoj vlastný tajný kľúč
     resave: false,
     saveUninitialized: true,
-    cookie: { secure: false } // Zmeňte na true, ak používate HTTPS
+    cookie: { secure: false } // Nastavte na false pre HTTP
 }));
 
+// Používateľské údaje
 const users = [
     { username: 'Patres', password: 'olekolegunar', name: 'Patres', profilePic: '/images/patres.jpg' },
     { username: 'Matelko', password: 'limonada', name: 'Matelko', profilePic: '/images/matelko.jpg' },
@@ -73,7 +77,6 @@ app.use((req, res, next) => {
     next();
 });
 
-
 // Endpoint na kontrolu prihlásenia
 app.get('/login/status', (req, res) => {
     if (req.session.user) {
@@ -83,23 +86,23 @@ app.get('/login/status', (req, res) => {
     }
 });
 
-///////////////////////zapis udajov do suboru///////////////////////////
-
+// Funkcia na formátovanie dátumu
 const formatDate = (date) => {
-    const day = String(date.getDate()).padStart(2, '0');
-    const month = String(date.getMonth() + 1).padStart(2, '0'); // Mesiace sú od 0
-    const year = date.getFullYear();
-    const hours = String(date.getHours()).padStart(2, '0');
-    const minutes = String(date.getMinutes()).padStart(2, '0');
-    const seconds = String(date.getSeconds()).padStart(2, '0');
-    return `${day}.${month}.${year}, ${hours}:${minutes}:${seconds}`;
+    // Používame moment-timezone na konverziu času na CET
+    const formattedDate = moment(date).tz('Europe/Bratislava').format('DD.MM.YYYY, HH:mm:ss');
+    return formattedDate;
 };
-
 
 // Endpoint na zápis údajov do súboru
 app.post('/submit', (req, res) => {
     const data = req.body;
     const filePath = path.join(__dirname, 'data.txt');
+    
+    // Overenie prihlásenia používateľa
+    if (!data || !data[0] || !data[0].user) {
+        return res.status(400).json({ success: false, message: 'MUSIS SA PRIHLASIT' });
+    }
+
     const timestamp = formatDate(new Date());
     const content = data.map(item => 
         `User: ${item.user}, ID: ${item.id}, Text: ${item.text}, Timestamp: ${timestamp}`
@@ -114,14 +117,6 @@ app.post('/submit', (req, res) => {
         }
     });
 });
-//////////////////////////////////////////////////
-
-
-
-
-
-
-
 
 // Spustenie servera
 const PORT = process.env.PORT || 3005;
