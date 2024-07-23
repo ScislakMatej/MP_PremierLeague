@@ -4,6 +4,7 @@
 ## DONE
 - pouzivatel sa prihlasi - jeho meno je viditelne
 - udaje pridava vo svojom mene
+- deoply na Azure
 
 
 
