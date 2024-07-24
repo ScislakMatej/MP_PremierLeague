@@ -2,14 +2,15 @@
 - pouzivatel sa prihlasi - jeho meno je viditelne
 - udaje pridava vo svojom mene
 - je to na Azure
+- neprihlaseny pouzivatel nemoze tipovat
+- pri zadani udajov sa zmeni farba buttonu na zelenu a zmeni sa napis na SAVED! - udaje su ulozene v text poli navzdy
+-
 
 
 
 # TO DO
-- neprihlaseny pouzivatel nemoze tipovat ✅
-- deploy na Azure ✅
-- opravit NAV ✅
-- na mobile - pri spracovani vyskakovacie okno + zele tlacidlo o potvrdeni
+- vyvijat ROUNDS
+- na mobile - pri spracovani vyskakovacie okno 
 - rozdelit 'stranka2425' na rounds
 - hlaska po uspesnom prihlasani - VITAJTE
 - css
@@ -18,9 +19,7 @@
 
 
 # BUGS
-- hlaska po uspesnom natipovani
-- nezmeni sa farba buttonu (pri potvrdeni udajov - sezona2425)
-- nevyskoci SAVED (pri potvrdeni udajov - sezona2425)
+
 
 
 # DETAILS
