@@ -4,7 +4,7 @@
 - je to na Azure
 - neprihlaseny pouzivatel nemoze tipovat
 - pri zadani udajov sa zmeni farba buttonu na zelenu a zmeni sa napis na SAVED! - udaje su ulozene v text poli navzdy
--
+
 
 
 
