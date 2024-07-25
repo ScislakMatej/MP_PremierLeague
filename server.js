@@ -13,6 +13,27 @@ app.use(bodyParser.json()); // Načítanie JSON údajov
 // Nastavenie statického priečinka pre statické súbory (Bootstrap, CSS, JS, atď.)
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Nastavenie statického priečinka pre vypis uz tipnutych zapasov
+app.use('/data', express.static(path.join(__dirname, 'data')));
+
+
+// Definovanie trasy na zobrazenie obsahu súboru
+app.get('/file/:filename', (req, res) => {
+    const filename = req.params.filename;
+    const filePath = path.join(__dirname, 'data', filename);
+
+    fs.readFile(filePath, 'utf8', (err, data) => {
+        if (err) {
+            // Ak súbor neexistuje alebo nastane iná chyba
+            res.status(500).send('Error reading file');
+            return;
+        }
+        res.send(data);
+    });
+});
+
+
+
 // Nastavenie express-session
 app.use(session({
     secret: 'your-secret-key', // Zmeňte na svoj vlastný tajný kľúč
@@ -110,7 +131,7 @@ app.post('/submit', (req, res) => {
 
     const timestamp = formatDate(new Date());
     const content = data.map(item =>
-        `Superhero 🦸🏻‍♂️: ${item.user}, Zápas: ${item.id}, Tip 📊: ${item.text}, Čas tipu ⏱️: ${timestamp}`
+        `🦸🏻‍♂️: ${item.user}, ⚽️: ${item.id}, 📊: ${item.text}, ⏱️: ${timestamp}`
     ).join('\n');
 
     fs.appendFile(filePath, content + '\n', (err) => {

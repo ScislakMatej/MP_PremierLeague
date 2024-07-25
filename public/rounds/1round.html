@@ -38,6 +38,13 @@
       <a href="/sezona2425.html" class="btn btn-primary" role="button">Späť na Sezóna 2024/25 🔙</a>
     </div>
 
+    <br>
+
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button id="load-file-btn" class="btn btn-primary">Natipované zápasy od ostatných superhrdinov 🦸🏻‍♂️</button>
+      <textarea id="file-content" class="form-control mt-3" rows="3" readonly></textarea>
+    </div>
+
     <div class="container">
         <h1 class="mt-5">1. kolo (16.8 - 19.8.2024)</h1>
     </div>
@@ -160,6 +167,27 @@
               console.error('Error:', error);
           });
       }
+
+
+    // skript na nacitanie uz tipnutych zapasov
+    document.getElementById('load-file-btn').addEventListener('click', () => {
+            const filename = '1round.txt'; // Zmeňte názov súboru podľa potreby
+            fetch(`/data/${filename}`) // Ak používate štatické poskytovanie
+            // fetch(`/file/${filename}`) // Ak používate dynamické čítanie
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById('file-content').value = data;
+                })
+                .catch(error => {
+                    console.error('There has been a problem with your fetch operation:', error);
+                    document.getElementById('file-content').value = 'Error loading file';
+                });
+        });
     </script>
 
     <script src="js/all.js"></script> 
