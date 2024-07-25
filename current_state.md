@@ -1,4 +1,7 @@
-# DONE
+# M&P - Premier League 2024/25
+
+
+## DONE
 - pouzivatel sa prihlasi - jeho meno je viditelne
 - udaje pridava vo svojom mene
 - je to na Azure
@@ -9,7 +12,7 @@
 
 
 
-# TO DO
+## TO DO
 1. vyvijat ROUNDS
     - upravit kod, aby kazde kolo bolo v samostatnom subore (identifikator stranky)
 2. na mobile - pri spracovani vyskakovacie okno 
@@ -19,16 +22,17 @@
 
 
 
-# BUGS
+## BUGS
 - farba buttonu sa nezmeni na zelenu
+- ak pouzivatel zada zle meno, vyskoci hlaska. Ak potom zada spravne, hlaska je stale tam
 
 
 
-# DETAILS
+## DETAILS
 - do ID pola pridat aj cislo kola - jednoduchsie filtrovanie
 
 
-## RULES - game
+### RULES - game
 1. tip vitaza
 2. tip na strelca
 3. tip na vysledok

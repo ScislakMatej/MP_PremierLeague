@@ -6,19 +6,26 @@
 - udaje pridava vo svojom mene
 - je to na Azure
 - neprihlaseny pouzivatel nemoze tipovat
-- pri zadani udajov sa zmeni farba buttonu na zelenu a zmeni sa napis na SAVED! - udaje su ulozene v text poli navzdy
+- pri zadani udajov sa zobrazia v textovom poli
+- udaje pre kazde kolo su ulozene do samostatneho suboru
+
+
 
 
 ## TO DO
-- vyvijat ROUNDS
-- na mobile - pri spracovani vyskakovacie okno 
-- rozdelit 'stranka2425' na rounds
-- hlaska po uspesnom prihlasani - VITAJTE
-- css
+1. vyvijat ROUNDS
+    - upravit kod, aby kazde kolo bolo v samostatnom subore (identifikator stranky)
+2. na mobile - pri spracovani vyskakovacie okno 
+3. hlaska po uspesnom prihlasani - VITAJTE
+4. css
+
 
 
 
 ## BUGS
+- farba buttonu sa nezmeni na zelenu
+- ak pouzivatel zada zle meno, vyskoci hlaska. Ak potom zada spravne, hlaska je stale tam
+
 
 
 ## DETAILS
@@ -26,6 +33,7 @@
 
 
 ### RULES - game
-1. tip vitaza / tip na vysledok
+1. tip vitaza
 2. tip na strelca
+3. tip na vysledok
 4. tipovanie celej tabulky
