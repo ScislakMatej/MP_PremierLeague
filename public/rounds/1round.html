@@ -16,10 +16,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" href="sezona2425.html">Sezóna 2024/25</a>
-            <a class="nav-link" href="pravidla.html">Pravidlá</a>
-            <a class="nav-link" href="big4.html">Players</a>
-            <a class="nav-link" href="historia.html">História</a>
+            <a class="nav-link" href="/sezona2425.html">Sezóna 2024/25</a>
+            <a class="nav-link" href="/pravidla.html">Pravidlá</a>
+            <a class="nav-link" href="/big4.html">Players</a>
+            <a class="nav-link" href="/historia.html">História</a>
           </div>
           <div class="ms-auto d-flex align-items-center">
             <div id="user-profile" class="dropdown">
@@ -30,6 +30,13 @@
         </div>
       </div>
     </nav>
+
+    <input type="hidden" id="source-file" value="1kolo">                 <!-- sluzi na identifikaciu suboru-->
+
+
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <a href="/sezona2425.html" class="btn btn-primary" role="button">Späť na Sezóna 2024/25 🔙</a>
+    </div>
 
     <div class="container">
         <h1 class="mt-5">1. kolo (16.8 - 19.8.2024)</h1>
@@ -52,8 +59,20 @@
             <td>FUL</td>
             <td>
               <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="1/X/2/1X/2X + strelec" aria-label="1/X/2/1X/2X + strelec" id="row-input-1">
-                <button class="btn btn-outline-secondary" type="button" onclick="submitRow('row-input-1', this)" id="button-1">Submit Row</button>
+                <input type="text" class="form-control" placeholder="1/X/2/1X/2X + strelec" aria-label="1/X/2/1X/2X + strelec" id="mun-ful_TP">
+                <button class="btn btn-outline-secondary" type="button" onclick="submitRow('mun-ful_TP', this)" id="mun-ful_B">Natipovať!</button>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>ARS</td>
+            <td>:</td>
+            <td>BOU</td>
+            <td>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="1/X/2/1X/2X + strelec" aria-label="1/X/2/1X/2X + strelec" id="ars-bou_TP">
+                <button class="btn btn-outline-secondary" type="button" onclick="submitRow('ars-bou_TP', this)" id="ars-bou_B">Natipovať!</button>
               </div>
             </td>
           </tr>
@@ -68,25 +87,31 @@
           document.getElementById('user-name').innerText = username;
           window.username = username; // Uložmeno používateľa do globálnej premennej pre prístup v submitRow
 
-          // Načítať hodnoty z localStorage
-          const inputText = localStorage.getItem(username + '-row-input-1-value');
-          const buttonState = localStorage.getItem(username + '-button-1-state');
-          
-          if (inputText) {
-              const input = document.getElementById('row-input-1');
-              input.placeholder = inputText;
-          }
+          // Načítať hodnoty z localStorage pre všetky vstupné polia
+          const inputs = document.querySelectorAll('input[type="text"]');
+          inputs.forEach(input => {
+              const inputId = input.id;
+              const inputText = localStorage.getItem(username + '-' + inputId + '-value');
+              const buttonState = localStorage.getItem(username + '-' + inputId + '-state');
 
-          if (buttonState === 'saved') {
-              const button = document.getElementById('button-1');
-              button.classList.add('btn-saved');
-              button.innerText = 'Saved!';
-          }
+              if (inputText) {
+                  input.placeholder = inputText;
+              }
+
+              if (buttonState === 'saved') {
+                  const button = document.querySelector(`#${inputId}_B`);
+                  if (button) {
+                      button.classList.add('btn-natipovane');
+                      button.innerText = 'Natipované!';
+                  }
+              }
+          });
       });
 
       function submitRow(inputId, button) {
           const input = document.getElementById(inputId);
           const text = input.value;
+          const sourceFile = document.getElementById('source-file').value;            // Získame hodnotu source-file z inputu
 
           if (!text) { // Kontrola prázdneho poľa
               alert('Dačo si tipni aspoň, prázdne pole je nuda!');
@@ -107,7 +132,8 @@
               user: window.username,
               id: inputId,  // ID textového poľa
               text: text,
-              timestamp: formattedDateTime // Pridáme časový údaj
+              timestamp: formattedDateTime, // Pridáme časový údaj
+              sourceFile: sourceFile        //idetifikator suboru
           };
 
           fetch('/submit', {
@@ -121,8 +147,8 @@
           .then(data => {
               console.log('Success:', data);
               alert('Data submitted successfully from ' + inputId);
-              button.classList.add('btn-saved');
-              button.innerText = 'Saved!';
+              button.classList.add('btn-natipovane');
+              button.innerText = 'Natipované!';
               input.placeholder = text;
               input.value = '';
 

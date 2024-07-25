@@ -3,8 +3,8 @@ body {
 }
 
 /* - - - - - - - - - - - - - - - farba buttonu po potvrdeni udajov - - -  */
-.btn-saved {
-    background-color: green;
+.btn-natipovane {
+    background-color: green !important;
     color: white;
 }
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */

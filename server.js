@@ -49,6 +49,10 @@ app.get('/historia.html', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'historia.html'));
 });
 
+app.get('/sezona2425.html', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'sezona2425 .html'));
+});
+
 // Endpoint na prihlásenie
 app.post('/login', (req, res) => {
     const { username, password } = req.body;
@@ -96,16 +100,17 @@ const formatDate = (date) => {
 // Endpoint na zápis údajov do súboru
 app.post('/submit', (req, res) => {
     const data = req.body;
-    const filePath = path.join(__dirname, 'data.txt');
-    
+    const sourceFile = data[0].sourceFile;
+    const filePath = path.join(__dirname, 'data', `${sourceFile}.txt`);
+
     // Overenie prihlásenia používateľa
     if (!data || !data[0] || !data[0].user) {
         return res.status(400).json({ success: false, message: 'MUSIS SA PRIHLASIT' });
     }
 
     const timestamp = formatDate(new Date());
-    const content = data.map(item => 
-        `User: ${item.user}, ID: ${item.id}, Text: ${item.text}, Timestamp: ${timestamp}`
+    const content = data.map(item =>
+        `Superhero 🦸🏻‍♂️: ${item.user}, Zápas: ${item.id}, Tip 📊: ${item.text}, Čas tipu ⏱️: ${timestamp}`
     ).join('\n');
 
     fs.appendFile(filePath, content + '\n', (err) => {
