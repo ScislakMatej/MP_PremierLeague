@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     localStorage.removeItem('username');
                     localStorage.removeItem('userName');
                     localStorage.removeItem('profilePic');
-                    window.location.href = 'home.html'; // Presmerovanie na domovskú stránku
+                    window.location.href = '/home.html'; // Presmerovanie na domovskú stránku
                 } else {
                     console.error('Logout failed:', data.message);
                 }
