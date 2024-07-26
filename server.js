@@ -145,7 +145,7 @@ app.post('/submit', (req, res) => {
 });
 
 // Spustenie servera
-const PORT = process.env.PORT || 3005;
+const PORT = process.env.PORT || 3006;
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });

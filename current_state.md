@@ -12,19 +12,22 @@
 
 ## TO DO
 
-1. vyvijat ROUNDS
-    - podla 1round vytvorit vsetky
-2. na mobile - pri spracovani vyskakovacie okno
-3. hlaska po uspesnom prihlasani - VITAJTE
-4. css
+- opravit VYSKAKOVACIU HLASKU po zlom prihlaseni
+- zobrazit fotku po prihlaseni
+- zobrzit fotku pri logu
 
 ## BUGS
 
 - farba buttonu sa nezmeni na zelenu
 - ak pouzivatel zada zle meno, vyskoci hlaska. Ak potom zada spravne, hlaska je stale tam
+- na inych strankach ako je hlavna nepise meno prihlaseneho pouzivatela
 
-## DETAILS
+## ON MIND
 
+1. vyvijat ROUNDS
+    - podla 1round vytvorit vsetky
+2. na mobile - pri spracovani vyskakovacie okno
+3. css
 
 ### RULES - game
 

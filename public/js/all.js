@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const userProfile = document.getElementById('user-profile');
-    const userNameSpan = document.getElementById('user-name'); // Nový element
+    const user = document.getElementById('user-name'); // Nový element
     const profilePic = document.getElementById('profile-pic');
     const logoutBtn = document.getElementById('logout');
     
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(data => {
                 if (data.success) {
                     localStorage.removeItem('username');
-                    localStorage.removeItem('userName');
+                 //   localStorage.removeItem('userName');
                     localStorage.removeItem('profilePic');
                     window.location.href = '/home.html'; // Presmerovanie na domovskú stránku
                 } else {

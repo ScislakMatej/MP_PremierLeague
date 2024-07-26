@@ -3,31 +3,84 @@ body {
     filter: brightness(80%);
 }
 
-h1{
-    color: white;
-    font-size: 5em;
-    text-align: center;
+/* - - - - - - NAVBAR - - - - - - - - -  */
+.navbar {
+  background-color: #f8f9fa; /* Vaša preferovaná farba */
+  background: transparent;
 }
 
-/* Zmena farby pozadia navbaru */
-.navbar {
-    background-color: #f8f9fa; /* Vaša preferovaná farba */
-  }
-
 .navbar-nav .nav-link {
-    color: black;
-    font-size: 1.3em;
-  }
+  color: black;
+  font-size: 1.3em;
+}
 
-  .navbar-brand {
-    color: black;
-    font-size: 1.4em;
+.navbar-brand {
+  color: black;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link:not(:first-child) {
+  margin-left: 1em; 
+}
+
+
+/* - - - - - - uvod - - - - - - */
+.uvod {
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.uvod h1 {
+    font-size: 38px;
     font-weight: bold;
-  }
+}
 
-  .navbar-nav .nav-link:not(:first-child) {
-    margin-left: 1em; 
-  }
+
+.logo {
+    width: 130px;
+    height: 150px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 20px;
+    -webkit-border-radius: 20;
+    -moz-border-radius: 20;
+    -ms-border-radius: 20;
+    -o-border-radius: 20;
+}
+
+/* - - - - - -  LOGIN - - - - - - */
+.login_container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.login_container h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login_container button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #10162F;
+  border-radius: 30px;
+  -webkit-border-radius: 30;
+  -moz-border-radius: 30;
+  -ms-border-radius: 30;
+  -o-border-radius: 30;
+}
+
+/* - - - - - - - - -  - - - - - - */
 
 
 /* -------------------------------Štýly pre profil používateľa-------------------------- */
@@ -84,3 +137,8 @@ h1{
 }
 /* --------------------------------------------------------- */
   
+
+.welcome_container h1{
+  color: thistle;
+    
+}
