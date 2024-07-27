@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pravidlá</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/pravidla.css">
 </head>
 <body>
 
@@ -37,15 +37,75 @@
       </div>
     </nav>
 
-    <div class="container">
-        <h1 class="mt-5">Pravidlá</h1>
+    <div class="main_container">
+        <p class="title">Pravidlá</p>
+
+
+        <p class="general">
+          <b>M&P Premier League</b> je založená na princípe <b>tipovania</b> výsledkov zápasov anglickej Premier League.
+          Tipy SUPERHRDINOV sa delia na <b>pravidelné</b> a <b>sporadické</b>. Body sa sčítavajú. Tipér, ktorý bude
+          mať na konci sezóny najviac bodov sa stáva právoplatným <b>KRÁĽOM M&P Premier League</b> 👑.
+        </p>
+<br><br>
+        <div class="regular-tips">
+          <h2>Pravidelné tipy</h2>
+          <p>
+              Pravidelné tipy sú základom celej súťaže. Superhrdinovia tipujú v každom kole všetky zápasy. 
+              V jednotlivých zápasoch tipujú <b>víťaza zápasu</b> a <b>strelca</b>. 
+              Získané body za víťaza zápasu a strelca sa sčítavajú.<br><br>
+            </p>
+
+            <p style="font-size: larger; font-weight: bold;">Tipovanie víťaza zápasu</p>
+            <p>
+              Tipér sa môže rozhodnúť, či chce tipovať víťaza zápasu vo forme presného výsledku alebo len víťaza zápasu.
+              Ak sa rozhodne tipovať víťaza zápasu, môže si vybrať zo 6 možností (1/2/X/1X/12/2X).
+              Body získava následovne:
+              <br>
+              <ul>
+                <li>Priamy tip (1/X/2) - <b>3 body</b></li>
+                <li>Tip s poistením (1X/12/2X) - <b>1 bod</b></li>
+                <li>Presný výsledok zápasu - <b>5 bodov</b></li>
+              </ul>
+            </p>
+<br><br>
+            <p style="font-size: larger; font-weight: bold;">Tipovanie strelca</p>
+            <p>
+              V prípade tipovania strelca si každý tipér môže vybrať <b>maximálne 1</b> hráča z oboch tímov.
+              Každý tipér si musí vybrať jedinečného hráča - rovnakého hráča nesmie tipovať viacero tipérov. 
+              Body tipér získava na základe pozície hráča, ktorého natipoval (do úvahy sa berie taká pozícia, akú 
+              má hráč zaevidovanú na portáli <b>Flashscore</b>). 
+            </p>
+            <ul>
+              <li>Útočník - <b>1 bod</b></li>
+              <li>Záložník - <b>2 bod</b></li>
+              <li>Obranca - <b>5 bodov</b></li>
+            </ul>
+
+
+<br><br>      
+              <p style="font-size: larger; font-weight: bold;">Kradnutie bodov 🃏</p>
+              <p>
+              Toto pravidlo sa týka tipovania strelca.
+              V prípade, že sa presadia aspoň dvaja natipovaní strelci, tipér, ktorého hráč sa presadil ako prvý, získava 
+              body za <b>VŠETKÝCH</b> strelcov, ktorí sa v zápase presadili neskôr, ako on. Tipér, ktorého hráč sa nepresadil o body neprichádza.
+              </p>
+
+<br><br><br>
+              <p style="color: yellow; font-weight: bold; font-size: medium; margin-bottom: 5px; text-align: center;">POZOR!!!</p>
+              <p style="color: yellow;">Ak sa trafí len jeden strelec spomedzi všetkých natipovaných, automaticky 
+                sa tento body za tohto strelca <b>2-násobia</b>.</p>
+          
+        </div>
+
+
+
     </div>
 
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.js"></script> 
     <script src="js/home.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-3eeM2WZgZ5B1io6e8W9eFYY9Ol7pO7D95clg5FZCjTZsL9kPpT6uIKUpZfB9/pz6D" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-3eeM2WZgZ5B1io6e8W9eFYY9Ol7pO7D95clg5FZCjTZsL9kPpT6uIKUpZfB9/pz6D" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> -->
+    <!-- najnovsi-->  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
 </body>
 </html>

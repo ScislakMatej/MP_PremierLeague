@@ -12,11 +12,13 @@
 
 ## TO DO
 
+- pokracovat s pravidlami - sporadicke
+
 ## BUGS
 
 - farba buttonu sa nezmeni na zelenu
 - ak pouzivatel zada zle meno, vyskoci hlaska. Ak potom zada spravne, hlaska je stale tam
-- na inych strankach ako je hlavna nepise meno prihlaseneho pouzivatela
+- zmenit v navbare Players --> Superhrdinovia
 
 ## ON MIND
 

@@ -1,0 +1,35 @@
+body {
+    color: white;
+    background-color: #10162F;
+    filter: brightness(80%);
+  }
+  
+  /* - - - - - - NAVBAR - - - - - - - - -  */
+  .navbar {
+  background-color: #f8f9fa; /* Vaša preferovaná farba */
+  background: transparent;
+  }
+  
+  .navbar-nav .nav-link {
+  color: black;
+  font-size: 1.3em;
+  }
+  
+  .navbar-brand {
+  color: black;
+  font-size: 1.4em;
+  font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link:not(:first-child) {
+  margin-left: 1em; 
+  }
+  
+  /* - - - - - - hlavna cast - - - - - - - - -  */
+  
+  .main_container h1 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 25px;
+  }

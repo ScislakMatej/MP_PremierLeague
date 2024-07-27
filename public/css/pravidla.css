@@ -1,33 +1,57 @@
 body {
-    background-image: url(images/pozadie.png);
-    filter: brightness(80%);
+  color: white;
+  background-color: #10162F;
+  filter: brightness(80%);
 }
 
-h1{
-    color: white;
-    font-size: 4em;
-    text-align: center;
-}
-
-/* Zmena farby pozadia navbaru */
+/* - - - - - - NAVBAR - - - - - - - - -  */
 .navbar {
-    background-color: #f8f9fa; /* Vaša preferovaná farba */
-  }
+background-color: #f8f9fa; /* Vaša preferovaná farba */
+background: transparent;
+}
 
 .navbar-nav .nav-link {
-    color: black;
-    font-size: 1.3em;
-  }
+color: black;
+font-size: 1.3em;
+}
 
-  .navbar-brand {
-    color: black;
-    font-size: 1.4em;
-    font-weight: bold;
-  }
+.navbar-brand {
+color: black;
+font-size: 1.4em;
+font-weight: bold;
+}
 
-  .navbar-nav .nav-link:not(:first-child) {
-    margin-left: 1em; 
-  }
+.navbar-nav .nav-link:not(:first-child) {
+margin-left: 1em; 
+}
 
-  
-  
+/* - - - - - - hlavna cast - - - - - - - - -  */
+.main_container {
+text-align: justify;
+}
+
+
+
+.main_container .title{
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.main_container .general {
+  color: white;
+  font-size: 20px;
+  margin: 15px;
+}
+
+.regular-tips h2{
+  color:white;
+  font-size: 30px;
+  margin-left: 15px;
+}
+
+.regular-tips p{
+  color: white;
+  margin: 15px;
+}
