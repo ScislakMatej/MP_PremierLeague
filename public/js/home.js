@@ -9,6 +9,16 @@ document.addEventListener('DOMContentLoaded', function() {
   const welcomeText = document.getElementById('welcome_text');
   const profilePic = document.getElementById('profile-pic');
 
+  const profilePics = {
+    Patres: 'images/buni_karticka.jpg',
+    Matelko: 'images/matelko.jpeg',
+    Kiko: 'images/kiko.jpeg',
+  };
+
+  function getProfilePic(username) {
+    return profilePics[username] || '';
+  }
+
   function updateProfile(data) {
     if (data.success && data.user) {
       userProfile.style.display = 'flex';
@@ -16,12 +26,16 @@ document.addEventListener('DOMContentLoaded', function() {
       welcomeContainer.style.display = 'block';
       userNameSpan.textContent = data.user.name;
       welcomeText.textContent = `Vitaj ${data.user.name}!`;
-      if (data.user.profilePic) {
-        profilePic.src = data.user.profilePic;
+      
+      const profilePicUrl = getProfilePic(data.user.name);
+      if (profilePicUrl) {
+        profilePic.src = profilePicUrl;
         profilePic.style.display = 'block';
       } else {
         profilePic.style.display = 'none';
       }
+
+      errorMessage.innerText = ''; // Clear error message on successful profile update
     } else {
       userProfile.style.display = 'none';
       loginContainer.style.display = 'block';
@@ -49,6 +63,8 @@ document.addEventListener('DOMContentLoaded', function() {
       if (storedProfilePic) {
         profilePic.src = storedProfilePic;
         profilePic.style.display = 'block';
+      } else {
+        profilePic.style.display = 'none';
       }
     } else {
       userProfile.style.display = 'none';
@@ -100,7 +116,9 @@ document.addEventListener('DOMContentLoaded', function() {
     .then(data => {
       if (data.success) {
         localStorage.setItem('username', username);
-        localStorage.setItem('profilePic', data.user.profilePic);
+        const profilePicUrl = getProfilePic(username);
+        localStorage.setItem('profilePic', profilePicUrl);
+        errorMessage.innerText = ''; // Clear error message on successful login
         checkLoginStatus();
       } else {
         errorMessage.innerText = data.message || 'Nesprávne meno alebo heslo';

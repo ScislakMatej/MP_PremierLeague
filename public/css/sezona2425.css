@@ -1,10 +1,53 @@
 body {
-    color: black
+    color: white;
+    background-color: #10162F;
+    filter: brightness(80%);
 }
 
-/* - - - - - - - - - - - - - - - farba buttonu po potvrdeni udajov - - -  */
-.btn-natipovane {
-    background-color: green;
-    color: white;
+/* - - - - - - NAVBAR - - - - - - - - -  */
+.navbar {
+  background-color: #f8f9fa; /* Vaša preferovaná farba */
+  background: transparent;
 }
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+.navbar-nav .nav-link {
+  color: black;
+  font-size: 1.3em;
+}
+
+.navbar-brand {
+  color: black;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link:not(:first-child) {
+  margin-left: 1em; 
+}
+
+/* - - - - - - Uvodny text - - - - - - - - -  */
+
+.text_container p {
+margin: 15px;
+
+}
+
+.text_container .uvod {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.text_container .lead {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin: 15px;
+  margin-top: 25px;
+}
+
+.text_container .info_text {
+  text-align: justify;
+}
+

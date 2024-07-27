@@ -12,8 +12,6 @@
 
 ## TO DO
 
-- opravit VYSKAKOVACIU HLASKU po zlom prihlaseni
-- zobrazit fotku po prihlaseni
 - zobrzit fotku pri logu
 
 ## BUGS

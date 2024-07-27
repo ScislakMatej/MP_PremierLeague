@@ -3,6 +3,7 @@ body {
     filter: brightness(80%);
 }
 
+
 /* - - - - - - NAVBAR - - - - - - - - -  */
 .navbar {
   background-color: #f8f9fa; /* Vaša preferovaná farba */
@@ -27,7 +28,7 @@ body {
 
 /* - - - - - - uvod - - - - - - */
 .uvod {
-    color: white;
+    color: #f8f9fa;
     font-size: 1em;
     text-align: center;
     margin-top: 20px;
@@ -80,42 +81,33 @@ body {
   -o-border-radius: 30;
 }
 
-/* - - - - - - - - -  - - - - - - */
+/* - - - - - - - - - HLASKA PO PRIHLASENI - - - - - - */
+
+.welcome_container {
+  text-align: center;
+  color: white;
+}
+
+/* - - - - - - PROFILOVA FOTKA - - - - - - */
+.welcome_container img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+/* - - - - - - - - - - - - - - - */
+
+
 
 
 /* -------------------------------Štýly pre profil používateľa-------------------------- */
-#user-profile {
-  display: none;
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  background-color: white;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  z-index: 1000;
-}
 
-#user-profile .dropdown-menu {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
-#user-profile .dropdown-menu a {
-  color: #333;
-}
-
-#user-profile .dropdown-menu a:hover {
-  background-color: #f8f9fa;
-}
-
-.profile-icon {
-  cursor: pointer;
-  font-size: 24px;
-  color: #007bff;
-}
 
 /* Štýly pre login form */
 #login-form {
@@ -137,8 +129,3 @@ body {
 }
 /* --------------------------------------------------------- */
   
-
-.welcome_container h1{
-  color: thistle;
-    
-}
