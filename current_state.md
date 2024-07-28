@@ -12,7 +12,8 @@
 
 ## TO DO
 
-- pokracovat s pravidlami - sporadicke
+- uprava ROUNDS
+- doplnit ocenenie
 
 ## BUGS
 

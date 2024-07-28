@@ -1,0 +1,99 @@
+body {
+    color: white;
+    background-color: #10162F;
+    filter: brightness(80%);
+}
+
+/* - - - - - - NAVBAR - - - - - - - - -  */
+.navbar {
+  background-color: #f8f9fa; /* Vaša preferovaná farba */
+  background: transparent;
+}
+
+.navbar-nav .nav-link {
+  color: black;
+  font-size: 1.3em;
+}
+
+.navbar-brand {
+  color: black;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link:not(:first-child) {
+  margin-left: 1em; 
+}
+
+/* - - - - - - Nadpis - - - - - - - - -  */
+.main_container p{
+    margin: 15px;
+    font-size: 34px;
+    text-align: center;
+}
+
+
+/* - - - - - - Tabulka - - - - - - - - -  */
+
+.tabulka table {
+    width: 90%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 5px; /* Pridanie paddingu do buniek */
+}
+
+.tabulka table td:first-child,
+.tabulka table th:first-child {
+  padding-left: 20px; /* Nastavenie vnútorného okraja pre prvý stĺpec */
+}
+
+.tabulka table th {
+    margin: 10px;
+}
+
+.tabulka table img#crystal-palace{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50;
+    -moz-border-radius: 50;
+    -ms-border-radius: 50;
+    -o-border-radius: 50;
+    margin-left: -15px;
+}
+
+.tabulka table img#arsenal{
+    width: 50px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50;
+    -moz-border-radius: 50;
+    -ms-border-radius: 50;
+    -o-border-radius: 50;
+    margin-left: -15px;
+}
+
+.tabulka table img#manchester{
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    -webkit-border-radius: 50;
+    -moz-border-radius: 50;
+    -ms-border-radius: 50;
+    -o-border-radius: 50;
+    margin-left: -5px;
+}
+
+.tabulka p {
+    margin: 20px;
+}
+
+.tabulka thead{
+    border: 1px solid #ddd;
+}
+

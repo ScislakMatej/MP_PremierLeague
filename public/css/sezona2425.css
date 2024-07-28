@@ -51,3 +51,38 @@ margin: 15px;
   text-align: justify;
 }
 
+/* - - - - - - Buttons - - - - - - - - -  */
+
+.TS-button {
+  background-color: #f8f9fa;
+  color: black;
+  margin-left: 20px;
+}
+.TS-button:hover {
+  background-color: gold;
+  color: black;
+}
+
+.Z-button {
+  background-color: #f8f9fa;
+  color: black;
+  margin-left: 20px;
+}
+
+
+.Z-button:hover{
+  background-color: gold;
+  color: black;
+}
+
+.UZ-button {
+  background-color: #f8f9fa;
+  color: black;
+  margin-left: 20px;
+}
+
+.UZ-button:hover{
+  background-color: gold;
+  color: black;
+}
+

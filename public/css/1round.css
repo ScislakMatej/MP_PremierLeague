@@ -2,6 +2,34 @@ body {
     color: black
 }
 
+body {
+    color: white;
+    background-color: #10162F;
+    filter: brightness(80%);
+}
+
+/* - - - - - - NAVBAR - - - - - - - - -  */
+.navbar {
+  background-color: #f8f9fa; /* Vaša preferovaná farba */
+  background: transparent;
+}
+
+.navbar-nav .nav-link {
+  color: black;
+  font-size: 1.3em;
+}
+
+.navbar-brand {
+  color: black;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link:not(:first-child) {
+  margin-left: 1em; 
+}
+
+
 /* - - - - - - - - - - - - - - - farba buttonu po potvrdeni udajov - - -  */
 .btn-natipovane {
     background-color: green !important;
