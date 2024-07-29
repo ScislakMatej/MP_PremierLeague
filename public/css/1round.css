@@ -35,4 +35,34 @@ body {
     background-color: green !important;
     color: white;
 }
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - BUTTONS - - - - - - - - - - - - - - - - - - -  */
+
+.button-back{
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    color: black;
+}
+
+.button-back:hover{
+    background-color: gold;
+    color: black;
+}
+
+.button-other-matches{
+    background-color: #f8f9fa;
+    color: black;
+}
+
+.button-other-matches:hover{
+    background-color: gold;
+    color: black;
+}
+
+/* Štýly pre textarea */
+#file-content {
+    font-size: 10px; 
+    background-color: #f8f9fa; 
+    color: black; 
+    padding: 10px;
+    height: 100px;
+}

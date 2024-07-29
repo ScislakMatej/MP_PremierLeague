@@ -16,7 +16,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Nastavenie statického priečinka pre vypis uz tipnutych zapasov
 app.use('/data', express.static(path.join(__dirname, 'data')));
 
-
 // Definovanie trasy na zobrazenie obsahu súboru
 app.get('/file/:filename', (req, res) => {
     const filename = req.params.filename;
@@ -24,15 +23,12 @@ app.get('/file/:filename', (req, res) => {
 
     fs.readFile(filePath, 'utf8', (err, data) => {
         if (err) {
-            // Ak súbor neexistuje alebo nastane iná chyba
             res.status(500).send('Error reading file');
             return;
         }
         res.send(data);
     });
 });
-
-
 
 // Nastavenie express-session
 app.use(session({
@@ -44,9 +40,9 @@ app.use(session({
 
 // Používateľské údaje
 const users = [
-    { username: 'Patres', password: 'olekolegunar', name: 'Patres', profilePic: '/images/patres.jpg' },
-    { username: 'Matelko', password: 'limonada', name: 'Matelko', profilePic: '/images/matelko.jpg' },
-    { username: 'Kiko', password: 'viktordraslik', name: 'Kiko', profilePic: '/images/kiko.jpg' }
+    { username: 'Patres', password: 'olekolegunar', name: 'Patres', profilePic: '/images/buni_karticka.jpg' },
+    { username: 'Matelko', password: 'limonada', name: 'Matelko', profilePic: '/images/matelko.jpeg' },
+    { username: 'Kiko', password: 'viktordraslik', name: 'Kiko', profilePic: '/images/kiko.jpeg' }
 ];
 
 // Definovanie hlavných trás pre HTML stránky
@@ -71,7 +67,7 @@ app.get('/historia.html', (req, res) => {
 });
 
 app.get('/sezona2425.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'sezona2425 .html'));
+    res.sendFile(path.join(__dirname, 'public', 'sezona2425.html'));
 });
 
 // Endpoint na prihlásenie
@@ -113,7 +109,6 @@ app.get('/login/status', (req, res) => {
 
 // Funkcia na formátovanie dátumu
 const formatDate = (date) => {
-    // Používame moment-timezone na konverziu času na CET
     const formattedDate = moment(date).tz('Europe/Bratislava').format('DD.MM.YYYY, HH:mm:ss');
     return formattedDate;
 };
@@ -121,10 +116,9 @@ const formatDate = (date) => {
 // Endpoint na zápis údajov do súboru
 app.post('/submit', (req, res) => {
     const data = req.body;
-    const sourceFile = data[0].sourceFile;
+    const sourceFile = data[0]?.sourceFile;
     const filePath = path.join(__dirname, 'data', `${sourceFile}.txt`);
 
-    // Overenie prihlásenia používateľa
     if (!data || !data[0] || !data[0].user) {
         return res.status(400).json({ success: false, message: 'MUSIS SA PRIHLASIT' });
     }
