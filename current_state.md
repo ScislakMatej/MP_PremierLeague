@@ -12,7 +12,8 @@
 
 ## TO DO
 
-- uprava ROUNDS
+- rounds - tabulka pre ukoncene kolo
+- urychleny zaver
 - doplnit ocenenie
 
 ## BUGS
@@ -20,17 +21,12 @@
 - farba buttonu sa nezmeni na zelenu
 - ak pouzivatel zada zle meno, vyskoci hlaska. Ak potom zada spravne, hlaska je stale tam
 - zmenit v navbare Players --> Superhrdinovia
+- ak sa uz tipne, chcem aby ostalo NATIPOVANE!
 
 ## ON MIND
 
-1. vyvijat ROUNDS
-    - podla 1round vytvorit vsetky
-2. na mobile - pri spracovani vyskakovacie okno
-3. css
-
 ### RULES - game
 
-1. tip vitaza
+1. tip vitaza/vysledok
 2. tip na strelca
-3. tip na vysledok
-4. tipovanie celej tabulky
+3. tipovanie celej tabulky

@@ -31,7 +31,7 @@
         </div>
     </nav>
 
-    <input type="hidden" id="source-file" value="1round"> <!-- Identifikátor súboru -->
+    <input type="hidden" id="source-file" value="1round"> <!-- Identifikátor souboru -->
 
     <div class="d-grid gap-2 col-6 mx-auto button-back-container">
         <a href="/sezona2425.html" class="btn btn-primary button-back" role="button">Späť na Sezóna 2024/25 🔙</a>
@@ -50,63 +50,169 @@
 
     <div class="tabulka">
         <table class="table">
-            <thead>
-                <tr>
-                    <th>Stĺpec 1</th>
-                    <th>Stĺpec 2</th>
-                    <th>Stĺpec 3</th>
-                    <th>Stĺpec 4</th>
-                </tr>
-            </thead>
             <tbody>
                 <tr>
-                    <td>MUN</td>
-                    <td>:</td>
-                    <td>FUL</td>
+                    <td class="medium-width">16.8. ----- 21:00</td>
+                    <td> <br> MUN</td>
+                    <td class="small-width"> <br>:</td>
+                    <td> <br>FUL</td>
                     <td>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="1/X/2/1X/2X + strelec" aria-label="1/X/2/1X/2X + strelec" id="mun-ful_TP">
-                            <button class="btn btn-outline-secondary" type="button" onclick="submitRow('mun-ful_TP', this)" id="mun-ful_B">Natipovať!</button>
+                        <div class="guess_area">
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="mun-ful_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('mun-ful_TP', this)" id="mun-ful_B">✔️</button>
                         </div>
                     </td>
                 </tr>
+
                 <tr>
-                    <td>ARS</td>
-                    <td>:</td>
-                    <td>BOU</td>
+                    <td class="medium-width">17.8. ----- 13:30</td>
+                    <td> <br> IPS</td>
+                    <td class="small-width"> <br>:</td>
+                    <td> <br>LIV</td>
                     <td>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="1/X/2/1X/2X + strelec" aria-label="1/X/2/1X/2X + strelec" id="ars-bou_TP">
-                            <button class="btn btn-outline-secondary" type="button" onclick="submitRow('ars-bou_TP', this)" id="ars-bou_B">Natipovať!</button>
+                        <div class="guess_area">
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="ips-liv_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('ips-liv_TP', this)" id="ips-liv_B">✔️</button>
                         </div>
                     </td>
                 </tr>
+
+                <tr>
+                    <td class="medium-width">17.8. ----- 16:00</td>
+                    <td> <br> ARS</td>
+                    <td class="small-width"> <br>:</td>
+                    <td> <br>WOL</td>
+                    <td>
+                        <div class="guess_area">
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="ars-wol_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('ars-wol_TP', this)" id="ars-wol_B">✔️</button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="medium-width">17.8. ----- 16:00</td>
+                    <td> <br> EVE</td>
+                    <td class="small-width"> <br>:</td>
+                    <td> <br>BRI</td>
+                    <td>
+                        <div class="guess_area">
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="eve-bri_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('ars-wol_TP', this)" id="eve-bri_B">✔️</button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="medium-width">17.8. ----- 16:00</td>
+                    <td> <br> NEW</td>
+                    <td class="small-width"> <br>:</td>
+                    <td> <br>SOU</td>
+                    <td>
+                        <div class="guess_area">
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="new-sou_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('new-sou_TP', this)" id="new-sou_B">✔️</button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="medium-width">17.8. ----- 16:00</td>
+                    <td> <br> NOT</td>
+                    <td class="small-width"> <br>:</td>
+                    <td> <br>BOU</td>
+                    <td>
+                        <div class="guess_area">
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="not-bou_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('not-bou_TP', this)" id="not-bou_B">✔️</button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="medium-width">17.8. ----- 18:30</td>
+                    <td> <br> WHA</td>
+                    <td class="small-width"> <br>:</td>
+                    <td> <br>AST</td>
+                    <td>
+                        <div class="guess_area">
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="wha-ast_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('wha-ast_TP', this)" id="wha-ast_B">✔️</button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="medium-width">18.8. ----- 15:00</td>
+                    <td> <br> BRE</td>
+                    <td class="small-width"> <br>:</td>
+                    <td> <br>CRY</td>
+                    <td>
+                        <div class="guess_area">
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="bre-cry_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('bre-cry_TP', this)" id="bre-cry_B">✔️</button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="medium-width">18.8. ----- 17:30</td>
+                    <td> <br> CHE</td>
+                    <td class="small-width"> <br>:</td>
+                    <td> <br>MCI</td>
+                    <td>
+                        <div class="guess_area">
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="che-mci_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('che-mci_TP', this)" id="che-mci_B">✔️</button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="medium-width">19.8. ----- 21:00</td>
+                    <td> <br> LEI</td>
+                    <td class="small-width"> <br>:</td>
+                    <td> <br>TOT</td>
+                    <td>
+                        <div class="guess_area">
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="lei-tot_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('lei-tot_TP', this)" id="lei-tot_B">✔️</button>
+                        </div>
+                    </td>
+                </tr>
+
+                
+
+               
+
+
             </tbody>
         </table>
     </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // Načítanie užívateľského mena a ďalšie úpravy
             const username = localStorage.getItem('username');
-            console.log('Loaded username from localStorage:', username);
+            console.log('Loaded username from localStorage:', username); // Výpis užívateľského mena
             window.username = username;
-
+    
             const userNameElement = document.getElementById('user-name');
             if (userNameElement) {
                 userNameElement.innerText = username || 'Neprihlášený';
             }
-
+    
             const inputs = document.querySelectorAll('input[type="text"]');
             inputs.forEach(input => {
                 const inputId = input.id;
                 const inputText = localStorage.getItem(`${username}-${inputId}-value`);
                 const buttonState = localStorage.getItem(`${username}-${inputId}-state`);
-                console.log(`Loaded data for ${inputId}:`, { inputText, buttonState });
-
+                console.log(`Loaded data for ${inputId}:`, { inputText, buttonState }); // Výpis načítaných údajov
+    
                 if (inputText) {
                     input.placeholder = inputText;
                 }
-
+    
                 if (buttonState === 'saved') {
                     const button = document.querySelector(`#${inputId}_B`);
                     if (button) {
@@ -115,60 +221,58 @@
                     }
                 }
             });
-
+    
+            // Pridanie udalosť na kliknutie pre tlačidlo načítania súboru
             const loadFileBtn = document.getElementById('load-file-btn');
             const fileContent = document.getElementById('file-content');
             const sourceFileInput = document.getElementById('source-file');
-
-            if (!loadFileBtn || !fileContent || !sourceFileInput) {
-                console.error('One or more elements are missing');
-                return;
+    
+            if (loadFileBtn && fileContent && sourceFileInput) {
+                loadFileBtn.addEventListener('click', () => {
+                    const sourceFile = sourceFileInput.value;
+                    if (!sourceFile) {
+                        console.error('Source file identifier is missing');
+                        return;
+                    }
+                    console.log('Source file identifier:', sourceFile);
+    
+                    const url = `/file/${sourceFile}.txt`; // URL pre načítanie súboru
+                    console.log('Fetching from URL:', url);
+    
+                    fetch(url)
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error(`HTTP error! Status: ${response.status}`);
+                            }
+                            return response.text();
+                        })
+                        .then(text => {
+                            fileContent.value = text; // Zobrazenie obsahu v textarea
+                        })
+                        .catch(error => {
+                            console.error('Error fetching file:', error);
+                        });
+                });
             }
-
-            loadFileBtn.addEventListener('click', () => {
-                const sourceFile = sourceFileInput.value;
-                if (!sourceFile) {
-                    console.error('Source file identifier is missing');
-                    return;
-                }
-                console.log('Source file identifier:', sourceFile);
-
-                const url = `/file/${sourceFile}.txt`;
-                console.log('Fetching from URL:', url);
-
-                fetch(url)
-                    .then(response => {
-                        if (!response.ok) {
-                            throw new Error(`HTTP error! Status: ${response.status}`);
-                        }
-                        return response.text();
-                    })
-                    .then(text => {
-                        fileContent.value = text;
-                    })
-                    .catch(error => {
-                        console.error('Error fetching file:', error);
-                    });
-            });
         });
-
+    
         function submitRow(inputId, button) {
             if (!window.username) {
                 alert('Musíte sa prihlásiť, abyste mohli tipovať!');
                 return;
             }
-
-            console.log('Submitting data for:', window.username);
-
+    
+            console.log('Submitting data for:', window.username); // Výpis užívateľského mena pri odosielaní údajov
+    
             const input = document.getElementById(inputId);
             const text = input.value;
             const sourceFile = document.getElementById('source-file').value;
-
+    
             if (!text) {
                 alert('Dačo si tipni aspoň, prázdne pole je nuda!');
                 return;
             }
-
+    
             const now = new Date();
             const day = String(now.getDate()).padStart(2, '0');
             const month = String(now.getMonth() + 1).padStart(2, '0');
@@ -177,7 +281,7 @@
             const minutes = String(now.getMinutes()).padStart(2, '0');
             const seconds = String(now.getSeconds()).padStart(2, '0');
             const formattedDateTime = `${day}.${month}.${year}, ${hours}:${minutes}:${seconds}`;
-
+    
             const data = {
                 user: window.username,
                 id: inputId,
@@ -185,9 +289,9 @@
                 timestamp: formattedDateTime,
                 sourceFile: sourceFile
             };
-
-            console.log('Data to be sent:', data);
-
+    
+            console.log('Data to be sent:', data); // Výpis údajov, ktoré budú odoslané
+    
             fetch('/submit', {
                 method: 'POST',
                 headers: {
@@ -203,7 +307,7 @@
                 button.innerText = 'Natipované!';
                 input.placeholder = text;
                 input.value = '';
-
+    
                 localStorage.setItem(`${window.username}-${inputId}-value`, text);
                 localStorage.setItem(`${window.username}-${button.id}-state`, 'saved');
             })
@@ -212,6 +316,10 @@
             });
         }
     </script>
+
+    <!-- <script src="/js/all.js"></script>
+    <script src="/js/home.js"></script> -->
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

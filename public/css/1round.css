@@ -66,3 +66,56 @@ body {
     padding: 10px;
     height: 100px;
 }
+
+
+.title-container {
+  text-align: center;
+  margin: 20px;
+  border: #10162F 1px solid;
+}
+
+
+/* - - - - - - -TABULKA - - - - -  */
+
+.tabulka .table {
+ margin: 0 20px;
+}
+
+.tabulka .table td {
+  font-size: 15px;
+}
+
+.tabulka .table tr {
+  border: #10162F 3px solid;
+  margin: 5px;
+}
+
+.tabulka .guess_area .form-control{
+  font-size: 15px; 
+}
+
+.tabulka {
+  margin: 10px;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+
+.small-width{
+  width: 0px;
+}
+
+.medium-width{
+  width: 20px;
+}
+
+.guess_area{
+  width: 100px;
+}
+
+.guess_button{
+width: 105px;
+}
+
+.guess_input {
+  width: 105px;
+}

@@ -95,10 +95,10 @@ document.addEventListener('DOMContentLoaded', function() {
         errorMessage.innerText = ''; // Clear error message on successful profile update
       } else {
         console.error('User data is missing in response');
-        errorMessage.innerText = 'Profile update failed: User data is missing';
+       // errorMessage.innerText = 'Profile update failed: User data is missing';
       }
     } else {
-      errorMessage.innerText = data.message || 'Profile update failed';
+    //  errorMessage.innerText = data.message || 'Profile update failed';
     }
   }
 

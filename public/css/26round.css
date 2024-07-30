@@ -1,1 +1,128 @@
-/* CSS rules for round 26 */
+body {
+    color: black
+}
+
+body {
+    color: white;
+    background-color: #10162F;
+    filter: brightness(80%);
+}
+
+/* - - - - - - NAVBAR - - - - - - - - -  */
+.navbar {
+  background-color: #f8f9fa; /* Vaša preferovaná farba */
+  background: transparent;
+}
+
+.navbar-nav .nav-link {
+  color: black;
+  font-size: 1.3em;
+}
+
+.navbar-brand {
+  color: black;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link:not(:first-child) {
+  margin-left: 1em; 
+}
+
+
+/* - - - - - - - - - - - - - - - farba buttonu po potvrdeni udajov - - -  */
+.btn-natipovane {
+    background-color: green !important;
+    color: white;
+}
+/* - - - - - - - - - - - - - - - BUTTONS - - - - - - - - - - - - - - - - - - -  */
+
+.button-back{
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    color: black;
+}
+
+.button-back:hover{
+    background-color: gold;
+    color: black;
+}
+
+.button-other-matches{
+    background-color: #f8f9fa;
+    color: black;
+}
+
+.button-other-matches:hover{
+    background-color: gold;
+    color: black;
+}
+
+/* Štýly pre textarea */
+#file-content {
+    font-size: 10px; 
+    background-color: #f8f9fa; 
+    color: black; 
+    padding: 10px;
+    height: 100px;
+}
+
+
+.title-container {
+  text-align: center;
+  margin: 20px;
+  border: #10162F 1px solid;
+}
+
+
+/* - - - - - - -TABULKA - - - - -  */
+
+.tabulka .table {
+ margin: 0 20px;
+}
+
+.tabulka .table td {
+  font-size: 15px;
+}
+
+.tabulka .table tr {
+  border: #10162F 3px solid;
+  margin: 5px;
+}
+
+.tabulka .guess_area .form-control{
+  font-size: 15px; 
+}
+
+.tabulka {
+  margin: 10px;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+
+.small-width{
+  width: 0px;
+}
+
+.medium-width{
+  width: 20px;
+}
+
+.guess_area{
+  width: 100px;
+}
+
+.guess_button{
+width: 105px;
+}
+
+.guess_input {
+  width: 105px;
+}
+
+p {
+    text-align: center;
+    font-weight: 900;
+    font-size: 45px;
+    margin-top: 40px;
+}
