@@ -22,7 +22,9 @@
 - zmenit v navbare Players --> Superhrdinovia
 - ak sa uz tipne, chcem aby ostalo NATIPOVANE!
 
-## ON MIND
+## INFO
+
+- info pre timy (tvorba tabulky UZ je v /teams_info)
 
 ### RULES - game
 
