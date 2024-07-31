@@ -21,9 +21,9 @@ font-size: 1.4em;
 font-weight: bold;
 }
 
-.navbar-nav .nav-link:not(:first-child) {
-margin-left: 1em; 
-}
+/*.navbar-nav .nav-link:not(:first-child) {
+  margin-left: 1em; 
+}*/
 
 /* - - - - - - hlavna cast - - - - - - - - -  */
 .main_container {

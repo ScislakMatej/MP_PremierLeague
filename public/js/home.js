@@ -33,6 +33,8 @@ document.addEventListener('DOMContentLoaded', function() {
       return;
     }
     userProfile.style.display = data.success ? 'flex' : 'none';
+    logoutBtn.style.display = data.success ? 'inline-block' : 'none'; // Pridajte tento riadok
+
   }
 
   function updateLoginContainer(data) {
@@ -156,6 +158,9 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.removeItem('username');
             localStorage.removeItem('profilePic');
             updateProfile({ success: false });
+
+            // Presmerovanie na stránku home.html
+            window.location.href = 'home.html';
           } else {
             errorMessage.innerText = 'Chyba pri odhlasovaní.';
           }

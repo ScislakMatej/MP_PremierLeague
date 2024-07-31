@@ -21,9 +21,9 @@ body {
   font-weight: bold;
 }
 
-.navbar-nav .nav-link:not(:first-child) {
+/*.navbar-nav .nav-link:not(:first-child) {
   margin-left: 1em; 
-}
+}*/
 
 /* - - - - - - Nadpis - - - - - - - - -  */
 .main_container p{
@@ -55,6 +55,11 @@ th, td {
 .tabulka table th {
     margin: 10px;
 }
+
+.tabulka table tr {
+  height: 60px;
+}
+
 
 .tabulka table img#crystal-palace{
     width: 50px;

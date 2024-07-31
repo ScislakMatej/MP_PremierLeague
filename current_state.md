@@ -13,7 +13,6 @@
 ## TO DO
 
 - rounds - tabulka pre ukoncene kolo
-- urychleny zaver
 - doplnit ocenenie
 
 ## BUGS

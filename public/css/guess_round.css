@@ -1,0 +1,304 @@
+body {
+  color: white;
+  background-color: #10162F;
+  filter: brightness(80%);
+}
+
+/* - - - - - - NAVBAR - - - - - - - - -  */
+.navbar {
+background-color: #f8f9fa; /* Vaša preferovaná farba */
+background: transparent;
+}
+
+.navbar-nav .nav-link {
+color: black;
+font-size: 1.3em;
+}
+
+.navbar-brand {
+color: black;
+font-size: 1.4em;
+font-weight: bold;
+}
+
+/*.navbar-nav .nav-link:not(:first-child) {
+margin-left: 1em; 
+}*/
+
+/* - - - - - - Nadpis - - - - - - - - -  */
+.container .nadpis{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* - - - - - - Button - - - - - - - - -  */
+.back_button{
+  margin: 20px;
+  text-align: center;
+}
+
+
+/* - - - - - - Tabulka - - - - - - - - -  */
+
+.tabulka table {
+  width: 90%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+  margin: 0 auto;
+}
+
+th, td {
+  padding: 5px; /* Pridanie paddingu do buniek */
+}
+
+.tabulka table td:first-child,
+.tabulka table th:first-child {
+padding-left: 20px; /* Nastavenie vnútorného okraja pre prvý stĺpec */
+}
+
+.tabulka table th {
+  margin: 10px;
+}
+
+.tabulka table tr {
+height: 60px;
+}
+
+.tabulka p {
+  margin: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #f8f9fa;
+  color: black;
+  width: 35%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.tabulka thead{
+  border: 1px solid #ddd;
+}
+
+
+/* - - - -- - - - - -- TEAMS -- - - - - - - --*/
+
+.tabulka table img#crystal-palace{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-left: -15px;
+}
+
+.tabulka table img#arsenal{
+  width: 57px;
+  height: 35px;
+  border-radius: 50%;
+  -webkit-border-radius: 50;
+  -moz-border-radius: 50;
+  -ms-border-radius: 50;
+  -o-border-radius: 50;
+  margin-left: -17px;
+}
+
+.tabulka table img#manchester{
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  -webkit-border-radius: 50;
+  -moz-border-radius: 50;
+  -ms-border-radius: 50;
+  -o-border-radius: 50;
+  margin-left: -5px;
+}
+
+.tabulka table img#aston_villa{
+  margin-left: -24px !important;
+  width: 70px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50;
+  -moz-border-radius: 50;
+  -ms-border-radius: 50;
+  -o-border-radius: 50;
+  margin-left: -5px;
+}
+
+.tabulka table img#bournemouth{
+  margin-left: -24px !important;
+  width: 70px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50;
+  -moz-border-radius: 50;
+  -ms-border-radius: 50;
+  -o-border-radius: 50;
+  margin-left: -5px;
+}
+
+.tabulka table img#brentford{
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  -webkit-border-radius: 50;
+  -moz-border-radius: 50;
+  -ms-border-radius: 50;
+  -o-border-radius: 50;
+  margin-left: -5px;
+}
+
+.tabulka table img#brighton{
+  margin-left: -24px !important;
+  width: 70px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50;
+  -moz-border-radius: 50;
+  -ms-border-radius: 50;
+  -o-border-radius: 50;
+  margin-left: -5px;
+}
+
+.tabulka table img#chelsea{
+  margin-left: -24px !important;
+  width: 70px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50;
+  -moz-border-radius: 50;
+  -ms-border-radius: 50;
+  -o-border-radius: 50;
+  margin-left: -5px;
+}
+
+.tabulka table img#everton{
+  margin-left: -24px !important;
+  width: 70px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50;
+  -moz-border-radius: 50;
+  -ms-border-radius: 50;
+  -o-border-radius: 50;
+  margin-left: -5px;
+}
+
+.tabulka table img#fulham{
+  width: 33px;
+  height: 35px;
+  margin-left: -5px;
+}
+
+.tabulka table img#ipswich{
+  width: 33px;
+  height: 35px;
+  margin-left: -5px;
+}
+
+.tabulka table img#leicester{
+  margin-left: -24px !important;
+  width: 70px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50;
+  -moz-border-radius: 50;
+  -ms-border-radius: 50;
+  -o-border-radius: 50;
+  margin-left: -5px;
+}
+
+.tabulka table img#liverpool{
+  margin-left: -24px !important;
+  width: 70px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50;
+  -moz-border-radius: 50;
+  -ms-border-radius: 50;
+  -o-border-radius: 50;
+  margin-left: -5px;
+}
+
+.tabulka table img#m_city{
+  margin-left: -24px !important;
+  width: 70px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50;
+  -moz-border-radius: 50;
+  -ms-border-radius: 50;
+  -o-border-radius: 50;
+  margin-left: -5px;
+}
+
+.tabulka table img#newcastle{
+  margin-left: -24px !important;
+  width: 70px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50;
+  -moz-border-radius: 50;
+  -ms-border-radius: 50;
+  -o-border-radius: 50;
+  margin-left: -5px;
+}
+
+.tabulka table img#nottingham{
+  width: 33px;
+  height: 35px;
+  margin-left: -5px;
+}
+
+.tabulka table img#southampton{
+  margin-left: -24px !important;
+  width: 70px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50;
+  -moz-border-radius: 50;
+  -ms-border-radius: 50;
+  -o-border-radius: 50;
+  margin-left: -5px;
+}
+
+.tabulka table img#spurs{
+  margin-left: -24px !important;
+  width: 70px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50;
+  -moz-border-radius: 50;
+  -ms-border-radius: 50;
+  -o-border-radius: 50;
+  margin-left: -5px;
+}
+
+.tabulka table img#west_ham{
+  margin-left: -24px !important;
+  width: 70px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50;
+  -moz-border-radius: 50;
+  -ms-border-radius: 50;
+  -o-border-radius: 50;
+  margin-left: -5px;
+}
+
+.tabulka table img#wolves{
+  width: 45px;
+  height: 35px;
+  margin-left: -10px;
+}
+
+
+

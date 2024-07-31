@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PL 2024/25 - Standing guess - 1. round </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/sezona2425.css">
+    <link rel="stylesheet" href="/css/guess_round.css">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -31,37 +31,516 @@
       </div>
     </nav>
 
-    <div class="d-grid gap-2 col-6 mx-auto">
-      <a href="/sezona2425.html" class="btn btn-primary" role="button">Späť na Sezóna 2024/25 🔙</a>
-    </div>
+    <div class="d-grid gap-2 col-6 mx-auto back_button">
+      <a href="/sezona2425.html" class="btn btn-primary" role="button" style="background-color: #f8f9fa; color: black;">Späť na Sezóna 2024/25 🔙</a>
+  </div>
 
     <div class="container">
-        <h1 class="mt-5">Urýchlený záver - 1. kolo</h1>
+        <h1 class="nadpis">Urýchlený záver - 1. kolo</h1>
     </div>
 
-    <div class="container mt-4">
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Stĺpec 1</th>
-            <th>Stĺpec 2</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>MUN</td>
-            <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/Crystal_Palace_FC_logo_%282022%29.svg/566px-Crystal_Palace_FC_logo_%282022%29.svg.png?20220708205457" alt="buni" style="width: 20px; height: auto;"></td>
-            <td>FUL</td>
-          </tr>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="30000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Matelko 🦅"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Patres 🔴"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Kiko 👹"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="tabulka">
+            <p> &nbsp MATELKO 🦅</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>pos</th>
+                  <th></th>
+                  <th>move</th>
+                  <th>team</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1.</td>
+                  <td><img id="arsenal" src="https://1000logos.net/wp-content/uploads/2016/10/Arsenal-Logo-1024x640.png" alt="arsenal"></td>
+                  <td>- - -</td>
+                  <td>ARS</td>
+                </tr>
+                
+                <tr>
+                <td>2.</td>
+                  <td><img id="aston_villa" src="https://1000logos.net/wp-content/uploads/2022/05/Aston-Villa-Logo-1536x864.png" alt="aston_villa"></td>
+                  <td>- - -</td>
+                  <td>AST</td>
+                </tr>
 
-          <tr>
-            <td>ARS</td>
-            <td>:</td>
-            <td>BOU</td>
-          </tr>
-        </tbody>
-      </table>
+                <tr>
+                  <td>3.</td>
+                    <td><img id="bournemouth" src="https://1000logos.net/wp-content/uploads/2018/07/AFC-Bournemouth-Logo-1536x864.png" alt="bournemouth"></td>
+                    <td>- - -</td>
+                    <td>BOU</td>
+                </tr>
+
+                <tr>
+                  <td>4.</td>
+                    <td><img id="brentford" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Brentford_FC_crest.svg/1280px-Brentford_FC_crest.svg.png" alt="brentford"></td>
+                    <td>- - -</td>
+                    <td>BRE</td>
+                </tr>
+
+                <tr>
+                  <td>5.</td>
+                    <td><img id="brighton" src="https://1000logos.net/wp-content/uploads/2018/06/Brighton-Hove-Albion-Logo.png" alt="brighton"></td>
+                    <td>- - -</td>
+                    <td>BRI</td>
+                </tr>
+
+                <tr>
+                  <td>6.</td>
+                    <td><img id="chelsea" src="https://1000logos.net/wp-content/uploads/2016/11/Chelsea-Logo-1024x640.png" alt="chelsea"></td>
+                    <td>- - -</td>
+                    <td>CHE</td>
+                </tr>
+
+                <tr>
+                  <td>7.</td>
+                  <td><img id="crystal-palace" src="https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/a267/live/f0685d30-eedc-11ec-8935-4f1eb8b88d37.png" alt="crystal-palace"></td>
+                  <td>- - -</td>
+                  <td>CRY</td>
+                </tr>
+
+                <tr>
+                  <td>8.</td>
+                    <td><img id="everton" src="https://1000logos.net/wp-content/uploads/2023/04/Everton-logo-1536x864.png" alt="everton"></td>
+                    <td>- - -</td>
+                    <td>EVE</td>
+                </tr>
+
+                <tr>
+                  <td>9.</td>
+                    <td><img id="fulham" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Fulham_FC_%28shield%29.svg/548px-Fulham_FC_%28shield%29.svg.png?20180527194031" alt="fulham"></td>
+                    <td>- - -</td>
+                    <td>FUL</td>
+                </tr>
+
+                <tr>
+                  <td>10.</td>
+                    <td><img id="ipswich" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Ipswich_Town.svg/1024px-Ipswich_Town.svg.png" alt="ipswich"></td>
+                    <td>- - -</td>
+                    <td>IPS</td>
+                </tr>
+
+                <tr>
+                  <td>11.</td>
+                    <td><img id="leicester" src="https://1000logos.net/wp-content/uploads/2018/06/Leicester-City-Logo.png" alt="leicester"></td>
+                    <td>- - -</td>
+                    <td>LEI</td>
+                </tr>
+
+                <tr>
+                  <td>12.</td>
+                    <td><img id="liverpool" src="https://1000logos.net/wp-content/uploads/2017/04/Logo-Liverpool-1024x640.png" alt="liverpool"></td>
+                    <td>- - -</td>
+                    <td>LIV</td>
+                </tr>
+
+                <tr>
+                  <td>13.</td>
+                    <td><img id="m_city" src="https://1000logos.net/wp-content/uploads/2017/05/Manchester-City-Logo-1024x640.png" alt="m_city"></td>
+                    <td>- - -</td>
+                    <td>MCI</td>
+                </tr>
+                
+                <tr>
+                  <td>14.</td>
+                  <td><img id="manchester" src="https://upload.wikimedia.org/wikipedia/hif/f/ff/Manchester_United_FC_crest.png?20150523185345" alt="manchester"></td>
+                  <td>- - -</td>
+                  <td>MAN</td>
+                </tr>
+
+                <tr>
+                  <td>15.</td>
+                    <td><img id="newcastle" src="https://1000logos.net/wp-content/uploads/2021/05/Newcastle-United-logo-1536x977.png" alt="newcastle"></td>
+                    <td>- - -</td>
+                    <td>NEW</td>
+                </tr>
+
+                <tr>
+                  <td>16.</td>
+                    <td><img id="nottingham" src="https://upload.wikimedia.org/wikipedia/sco/thumb/d/d2/Nottingham_Forest_logo.svg/476px-Nottingham_Forest_logo.svg.png?20180513002349" alt="nottingham"></td>
+                    <td>- - -</td>
+                    <td>NOT</td>
+                </tr>
+
+                <tr>
+                  <td>17.</td>
+                    <td><img id="southampton" src="https://1000logos.net/wp-content/uploads/2018/07/Southampton-Logo-1024x640.png" alt="southampton"></td>
+                    <td>- - -</td>
+                    <td>SOU</td>
+                </tr>
+
+                <tr>
+                  <td>18.</td>
+                    <td><img id="spurs" src="https://1000logos.net/wp-content/uploads/2018/06/Tottenham_Hotspur_Logo-1536x960.png" alt="spurs"></td>
+                    <td>- - -</td>
+                    <td>TOT</td>
+                </tr>
+                
+                <tr>
+                  <td>19.</td>
+                    <td><img id="west_ham" src="https://1000logos.net/wp-content/uploads/2018/07/West-Ham-United-Logo-1024x640.png" alt="west_ham"></td>
+                    <td>- - -</td>
+                    <td>WHU</td>
+                </tr>
+
+                <tr>
+                  <td>20.</td>
+                    <td><img id="wolves" src="https://upload.wikimedia.org/wikipedia/de/thumb/1/1d/Wolverhampton_wanderers.svg/792px-Wolverhampton_wanderers.svg.png?20081101233626" alt="wolves"></td>
+                    <td>- - -</td>
+                    <td>WOL</td>
+                </tr>
+
+
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+
+        <div class="carousel-item">
+          <div class="tabulka">
+            <p> &nbsp PATRES 🔴</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>pos</th>
+                  <th></th>
+                  <th>move</th>
+                  <th>team</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1.</td>
+                  <td><img id="arsenal" src="https://1000logos.net/wp-content/uploads/2016/10/Arsenal-Logo-1024x640.png" alt="arsenal"></td>
+                  <td>- - -</td>
+                  <td>ARS</td>
+                </tr>
+                
+                <tr>
+                <td>2.</td>
+                  <td><img id="aston_villa" src="https://1000logos.net/wp-content/uploads/2022/05/Aston-Villa-Logo-1536x864.png" alt="aston_villa"></td>
+                  <td>- - -</td>
+                  <td>AST</td>
+                </tr>
+
+                <tr>
+                  <td>3.</td>
+                    <td><img id="bournemouth" src="https://1000logos.net/wp-content/uploads/2018/07/AFC-Bournemouth-Logo-1536x864.png" alt="bournemouth"></td>
+                    <td>- - -</td>
+                    <td>BOU</td>
+                </tr>
+
+                <tr>
+                  <td>4.</td>
+                    <td><img id="brentford" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Brentford_FC_crest.svg/1280px-Brentford_FC_crest.svg.png" alt="brentford"></td>
+                    <td>- - -</td>
+                    <td>BRE</td>
+                </tr>
+
+                <tr>
+                  <td>5.</td>
+                    <td><img id="brighton" src="https://1000logos.net/wp-content/uploads/2018/06/Brighton-Hove-Albion-Logo.png" alt="brighton"></td>
+                    <td>- - -</td>
+                    <td>BRI</td>
+                </tr>
+
+                <tr>
+                  <td>6.</td>
+                    <td><img id="chelsea" src="https://1000logos.net/wp-content/uploads/2016/11/Chelsea-Logo-1024x640.png" alt="chelsea"></td>
+                    <td>- - -</td>
+                    <td>CHE</td>
+                </tr>
+
+                <tr>
+                  <td>7.</td>
+                  <td><img id="crystal-palace" src="https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/a267/live/f0685d30-eedc-11ec-8935-4f1eb8b88d37.png" alt="crystal-palace"></td>
+                  <td>- - -</td>
+                  <td>CRY</td>
+                </tr>
+
+                <tr>
+                  <td>8.</td>
+                    <td><img id="everton" src="https://1000logos.net/wp-content/uploads/2023/04/Everton-logo-1536x864.png" alt="everton"></td>
+                    <td>- - -</td>
+                    <td>EVE</td>
+                </tr>
+
+                <tr>
+                  <td>9.</td>
+                    <td><img id="fulham" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Fulham_FC_%28shield%29.svg/548px-Fulham_FC_%28shield%29.svg.png?20180527194031" alt="fulham"></td>
+                    <td>- - -</td>
+                    <td>FUL</td>
+                </tr>
+
+                <tr>
+                  <td>10.</td>
+                    <td><img id="ipswich" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Ipswich_Town.svg/1024px-Ipswich_Town.svg.png" alt="ipswich"></td>
+                    <td>- - -</td>
+                    <td>IPS</td>
+                </tr>
+
+                <tr>
+                  <td>11.</td>
+                    <td><img id="leicester" src="https://1000logos.net/wp-content/uploads/2018/06/Leicester-City-Logo.png" alt="leicester"></td>
+                    <td>- - -</td>
+                    <td>LEI</td>
+                </tr>
+
+                <tr>
+                  <td>12.</td>
+                    <td><img id="liverpool" src="https://1000logos.net/wp-content/uploads/2017/04/Logo-Liverpool-1024x640.png" alt="liverpool"></td>
+                    <td>- - -</td>
+                    <td>LIV</td>
+                </tr>
+
+                <tr>
+                  <td>13.</td>
+                    <td><img id="m_city" src="https://1000logos.net/wp-content/uploads/2017/05/Manchester-City-Logo-1024x640.png" alt="m_city"></td>
+                    <td>- - -</td>
+                    <td>MCI</td>
+                </tr>
+                
+                <tr>
+                  <td>14.</td>
+                  <td><img id="manchester" src="https://upload.wikimedia.org/wikipedia/hif/f/ff/Manchester_United_FC_crest.png?20150523185345" alt="manchester"></td>
+                  <td>- - -</td>
+                  <td>MAN</td>
+                </tr>
+
+                <tr>
+                  <td>15.</td>
+                    <td><img id="newcastle" src="https://1000logos.net/wp-content/uploads/2021/05/Newcastle-United-logo-1536x977.png" alt="newcastle"></td>
+                    <td>- - -</td>
+                    <td>NEW</td>
+                </tr>
+
+                <tr>
+                  <td>16.</td>
+                    <td><img id="nottingham" src="https://upload.wikimedia.org/wikipedia/sco/thumb/d/d2/Nottingham_Forest_logo.svg/476px-Nottingham_Forest_logo.svg.png?20180513002349" alt="nottingham"></td>
+                    <td>- - -</td>
+                    <td>NOT</td>
+                </tr>
+
+                <tr>
+                  <td>17.</td>
+                    <td><img id="southampton" src="https://1000logos.net/wp-content/uploads/2018/07/Southampton-Logo-1024x640.png" alt="southampton"></td>
+                    <td>- - -</td>
+                    <td>SOU</td>
+                </tr>
+
+                <tr>
+                  <td>18.</td>
+                    <td><img id="spurs" src="https://1000logos.net/wp-content/uploads/2018/06/Tottenham_Hotspur_Logo-1536x960.png" alt="spurs"></td>
+                    <td>- - -</td>
+                    <td>TOT</td>
+                </tr>
+                
+                <tr>
+                  <td>19.</td>
+                    <td><img id="west_ham" src="https://1000logos.net/wp-content/uploads/2018/07/West-Ham-United-Logo-1024x640.png" alt="west_ham"></td>
+                    <td>- - -</td>
+                    <td>WHU</td>
+                </tr>
+
+                <tr>
+                  <td>20.</td>
+                    <td><img id="wolves" src="https://upload.wikimedia.org/wikipedia/de/thumb/1/1d/Wolverhampton_wanderers.svg/792px-Wolverhampton_wanderers.svg.png?20081101233626" alt="wolves"></td>
+                    <td>- - -</td>
+                    <td>WOL</td>
+                </tr>
+
+
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+
+        <div class="carousel-item">
+          <div class="tabulka">
+            <p> &nbsp KIKO 👹</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>pos</th>
+                  <th></th>
+                  <th>move</th>
+                  <th>team</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1.</td>
+                  <td><img id="arsenal" src="https://1000logos.net/wp-content/uploads/2016/10/Arsenal-Logo-1024x640.png" alt="arsenal"></td>
+                  <td>- - -</td>
+                  <td>ARS</td>
+                </tr>
+                
+                <tr>
+                <td>2.</td>
+                  <td><img id="aston_villa" src="https://1000logos.net/wp-content/uploads/2022/05/Aston-Villa-Logo-1536x864.png" alt="aston_villa"></td>
+                  <td>- - -</td>
+                  <td>AST</td>
+                </tr>
+
+                <tr>
+                  <td>3.</td>
+                    <td><img id="bournemouth" src="https://1000logos.net/wp-content/uploads/2018/07/AFC-Bournemouth-Logo-1536x864.png" alt="bournemouth"></td>
+                    <td>- - -</td>
+                    <td>BOU</td>
+                </tr>
+
+                <tr>
+                  <td>4.</td>
+                    <td><img id="brentford" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Brentford_FC_crest.svg/1280px-Brentford_FC_crest.svg.png" alt="brentford"></td>
+                    <td>- - -</td>
+                    <td>BRE</td>
+                </tr>
+
+                <tr>
+                  <td>5.</td>
+                    <td><img id="brighton" src="https://1000logos.net/wp-content/uploads/2018/06/Brighton-Hove-Albion-Logo.png" alt="brighton"></td>
+                    <td>- - -</td>
+                    <td>BRI</td>
+                </tr>
+
+                <tr>
+                  <td>6.</td>
+                    <td><img id="chelsea" src="https://1000logos.net/wp-content/uploads/2016/11/Chelsea-Logo-1024x640.png" alt="chelsea"></td>
+                    <td>- - -</td>
+                    <td>CHE</td>
+                </tr>
+
+                <tr>
+                  <td>7.</td>
+                  <td><img id="crystal-palace" src="https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/a267/live/f0685d30-eedc-11ec-8935-4f1eb8b88d37.png" alt="crystal-palace"></td>
+                  <td>- - -</td>
+                  <td>CRY</td>
+                </tr>
+
+                <tr>
+                  <td>8.</td>
+                    <td><img id="everton" src="https://1000logos.net/wp-content/uploads/2023/04/Everton-logo-1536x864.png" alt="everton"></td>
+                    <td>- - -</td>
+                    <td>EVE</td>
+                </tr>
+
+                <tr>
+                  <td>9.</td>
+                    <td><img id="fulham" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Fulham_FC_%28shield%29.svg/548px-Fulham_FC_%28shield%29.svg.png?20180527194031" alt="fulham"></td>
+                    <td>- - -</td>
+                    <td>FUL</td>
+                </tr>
+
+                <tr>
+                  <td>10.</td>
+                    <td><img id="ipswich" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Ipswich_Town.svg/1024px-Ipswich_Town.svg.png" alt="ipswich"></td>
+                    <td>- - -</td>
+                    <td>IPS</td>
+                </tr>
+
+                <tr>
+                  <td>11.</td>
+                    <td><img id="leicester" src="https://1000logos.net/wp-content/uploads/2018/06/Leicester-City-Logo.png" alt="leicester"></td>
+                    <td>- - -</td>
+                    <td>LEI</td>
+                </tr>
+
+                <tr>
+                  <td>12.</td>
+                    <td><img id="liverpool" src="https://1000logos.net/wp-content/uploads/2017/04/Logo-Liverpool-1024x640.png" alt="liverpool"></td>
+                    <td>- - -</td>
+                    <td>LIV</td>
+                </tr>
+
+                <tr>
+                  <td>13.</td>
+                    <td><img id="m_city" src="https://1000logos.net/wp-content/uploads/2017/05/Manchester-City-Logo-1024x640.png" alt="m_city"></td>
+                    <td>- - -</td>
+                    <td>MCI</td>
+                </tr>
+                
+                <tr>
+                  <td>14.</td>
+                  <td><img id="manchester" src="https://upload.wikimedia.org/wikipedia/hif/f/ff/Manchester_United_FC_crest.png?20150523185345" alt="manchester"></td>
+                  <td>- - -</td>
+                  <td>MAN</td>
+                </tr>
+
+                <tr>
+                  <td>15.</td>
+                    <td><img id="newcastle" src="https://1000logos.net/wp-content/uploads/2021/05/Newcastle-United-logo-1536x977.png" alt="newcastle"></td>
+                    <td>- - -</td>
+                    <td>NEW</td>
+                </tr>
+
+                <tr>
+                  <td>16.</td>
+                    <td><img id="nottingham" src="https://upload.wikimedia.org/wikipedia/sco/thumb/d/d2/Nottingham_Forest_logo.svg/476px-Nottingham_Forest_logo.svg.png?20180513002349" alt="nottingham"></td>
+                    <td>- - -</td>
+                    <td>NOT</td>
+                </tr>
+
+                <tr>
+                  <td>17.</td>
+                    <td><img id="southampton" src="https://1000logos.net/wp-content/uploads/2018/07/Southampton-Logo-1024x640.png" alt="southampton"></td>
+                    <td>- - -</td>
+                    <td>SOU</td>
+                </tr>
+
+                <tr>
+                  <td>18.</td>
+                    <td><img id="spurs" src="https://1000logos.net/wp-content/uploads/2018/06/Tottenham_Hotspur_Logo-1536x960.png" alt="spurs"></td>
+                    <td>- - -</td>
+                    <td>TOT</td>
+                </tr>
+                
+                <tr>
+                  <td>19.</td>
+                    <td><img id="west_ham" src="https://1000logos.net/wp-content/uploads/2018/07/West-Ham-United-Logo-1024x640.png" alt="west_ham"></td>
+                    <td>- - -</td>
+                    <td>WHU</td>
+                </tr>
+
+                <tr>
+                  <td>20.</td>
+                    <td><img id="wolves" src="https://upload.wikimedia.org/wikipedia/de/thumb/1/1d/Wolverhampton_wanderers.svg/792px-Wolverhampton_wanderers.svg.png?20081101233626" alt="wolves"></td>
+                    <td>- - -</td>
+                    <td>WOL</td>
+                </tr>
+
+
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Ďalší!</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Predošlý!</span>
+      </button>
     </div>
+
+
+
 
     <script>
       document.addEventListener('DOMContentLoaded', () => {

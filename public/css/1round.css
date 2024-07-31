@@ -25,9 +25,9 @@ body {
   font-weight: bold;
 }
 
-.navbar-nav .nav-link:not(:first-child) {
+/*.navbar-nav .nav-link:not(:first-child) {
   margin-left: 1em; 
-}
+}*/
 
 
 /* - - - - - - - - - - - - - - - farba buttonu po potvrdeni udajov - - -  */
