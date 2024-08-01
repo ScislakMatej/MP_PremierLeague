@@ -12,7 +12,8 @@
 
 ## TO DO
 
-- rounds - tabulka pre ukoncene kolo
+- doplnit superhrdinova
+- doplnit historia
 - doplnit ocenenie
 
 ## BUGS
