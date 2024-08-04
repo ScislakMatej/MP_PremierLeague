@@ -1,35 +1,110 @@
 body {
-    color: white;
-    background-color: #10162F;
-    filter: brightness(80%);
+  background-color: #10162F;
+  filter: brightness(80%);
+  color: white;
+}
+
+
+/* - - - - - - NAVBAR - - - - - - - - -  */
+.navbar {
+background-color: #f8f9fa; /* Vaša preferovaná farba */
+background: transparent;
+}
+
+.navbar-nav .nav-link {
+color: black;
+font-size: 1.3em;
+}
+
+.navbar-brand {
+color: black;
+font-size: 1.4em;
+font-weight: bold;
+}
+
+/*.navbar-nav .nav-link:not(:first-child) {
+margin-left: 1em; 
+}*/
+
+
+/* - - - - - - nadpis  - - - - - - */
+.nadpis_container .nadpis{
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+/* - - - - - - superheroes  - - - - - - */
+.accordion{
+  margin: 30px;
+  margin-top: 50px;
+}
+
+.superheroes_container {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+.superheroes_container h1 {
+  font-size: 30px;
+  color: white;
+}
+
+.superheroes_container .matelko{
+  margin: 50px;
+}
+
+.superheroes_container .patres{
+  margin: 50px;
+}
+
+.superheroes_container .kiko{
+  margin: 50px;
+}
+
+.fotky {
+  border-radius: 10px; /* Okrúhli rohy obrázku */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Pridá tieň */
+  object-fit: cover; /* Pokryje celý dostupný priestor */
+  height: 800px; /* Nastaví výšku obrázku */
+  width: 80%; /* Nastaví šírku obrázku */
+}
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Polopriehľadné pozadie pre text */
+  padding: 10px; /* Vnútorné odsadenie */
+  border-radius: 10px; /* Okrúhli rohy pozadia textu */
+}
+
+@media (max-width: 767px) {
+  .carousel-caption {
+    font-size: 14px; /* Zmenší text na menších obrazovkách */
+    padding: 5px; /* Zmenší vnútorné odsadenie na menších obrazovkách */
   }
-  
-  /* - - - - - - NAVBAR - - - - - - - - -  */
-  .navbar {
-  background-color: #f8f9fa; /* Vaša preferovaná farba */
-  background: transparent;
+  .fotky {
+    height: auto; /* Automatická výška pre malé obrazovky */
   }
-  
-  .navbar-nav .nav-link {
-  color: black;
-  font-size: 1.3em;
+}
+
+
+@media (min-width: 1440px) {
+.fotky{
+  height: 700px; /* Nastavená výška pre väčšie obrazovky */
+  width: 100%; /* Obrázky budú mať šírku 100% svojho kontajnera */
+  object-fit: contain;
+}
+
+
+  .carousel-image {
+    height: 800px; /* Nastavená výška pre väčšie obrazovky */
+    width: 100% !important; /* Obrázky budú mať šírku 100% svojho kontajnera */
+    object-fit: contain;
   }
-  
-  .navbar-brand {
-  color: black;
-  font-size: 1.4em;
-  font-weight: bold;
+
+  .carousel-hrac {
+    width: 40%; /* Šírka karuselu pre väčšie obrazovky */
+    height: 800px; /* Výška karuselu pre väčšie obrazovky */
+    margin: 0 auto; /* Centrovanie karuselu */
   }
-  
-  .navbar-nav .nav-link:not(:first-child) {
-  margin-left: 1em; 
-  }
-  
-  /* - - - - - - hlavna cast - - - - - - - - -  */
-  
-  .main_container h1 {
-    color: white;
-    font-size: 40px;
-    text-align: center;
-    margin-top: 25px;
-  }
+}

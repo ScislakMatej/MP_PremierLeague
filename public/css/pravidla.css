@@ -26,11 +26,19 @@ font-weight: bold;
 }*/
 
 /* - - - - - - hlavna cast - - - - - - - - -  */
-.main_container {
-text-align: justify;
+.nadpis_container{
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 25px;
 }
 
 
+.main_container {
+text-align: justify;
+margin-top: 50px;
+margin: 20px;
+}
 
 .main_container .title{
   color: white;

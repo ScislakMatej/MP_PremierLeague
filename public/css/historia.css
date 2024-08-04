@@ -1,0 +1,144 @@
+body {
+    background-color: #10162F;
+    filter: brightness(80%);
+    color: white;
+  }
+  
+  
+  /* - - - - - - NAVBAR - - - - - - - - -  */
+  .navbar {
+  background-color: #f8f9fa; /* Vaša preferovaná farba */
+  background: transparent;
+  }
+  
+  .navbar-nav .nav-link {
+  color: black;
+  font-size: 1.3em;
+  }
+  
+  .navbar-brand {
+  color: black;
+  font-size: 1.4em;
+  font-weight: bold;
+  }
+  
+  /*.navbar-nav .nav-link:not(:first-child) {
+  margin-left: 1em; 
+  }*/
+  
+  
+  /* - - - - - - nadpis  - - - - - - */
+  .nadpis_container .nadpis{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 25px;
+  }
+
+
+  /* - - - - - - obsah kontajner  - - - - - - */
+  .accordion_container{
+    margin-top: 50px;
+    margin: 20px;
+  }
+
+  .accordion_container .accordion-body .vitaz {
+    font-size: 30px;
+  }
+
+  .accordion_container .accordion-body .text {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+
+
+  /* - - - - - - tabulka  - - - - - - */
+  /* - - - - - - Tabulka - - - - - - - - -  */
+
+.tabulka table {
+    width: 90%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 3px solid black;
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 5px; /* Pridanie paddingu do buniek */
+}
+
+.tabulka table td:first-child,
+.tabulka table th:first-child {
+  padding-left: 20px; /* Nastavenie vnútorného okraja pre prvý stĺpec */
+}
+
+.tabulka table th {
+    margin: 10px;
+}
+
+.tabulka table tr {
+  height: 60px;
+}
+
+
+.tabulka table img#crystal-palace{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50;
+    -moz-border-radius: 50;
+    -ms-border-radius: 50;
+    -o-border-radius: 50;
+    margin-left: -15px;
+}
+
+.tabulka table img#arsenal{
+    width: 50px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50;
+    -moz-border-radius: 50;
+    -ms-border-radius: 50;
+    -o-border-radius: 50;
+    margin-left: -15px;
+}
+
+.tabulka table img#manchester{
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    -webkit-border-radius: 50;
+    -moz-border-radius: 50;
+    -ms-border-radius: 50;
+    -o-border-radius: 50;
+    margin-left: -5px;
+}
+
+.tabulka p {
+    margin: 20px;
+}
+
+.tabulka thead{
+    border: 3px solid black;
+}
+
+
+
+  @media (min-width: 1440px) {
+    .carousel-image {
+      height: 800px; /* Nastavená výška pre väčšie obrazovky */
+      width: 100% !important; /* Obrázky budú mať šírku 100% svojho kontajnera */
+      object-fit: contain;
+    }
+  
+    .moj-carousel {
+      width: 40%; /* Šírka karuselu pre väčšie obrazovky */
+      height: 800px; /* Výška karuselu pre väčšie obrazovky */
+      margin: 0 auto; /* Centrovanie karuselu */
+    }
+  }
+  
+
+  
+  
+ 

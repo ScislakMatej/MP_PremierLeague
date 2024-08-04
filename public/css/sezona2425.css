@@ -27,6 +27,11 @@ body {
 
 /* - - - - - - Uvodny text - - - - - - - - -  */
 
+.text_container {
+  margin-top: 50px;
+  margin: 20px;
+}
+
 .text_container p {
 margin: 15px;
 
