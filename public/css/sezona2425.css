@@ -74,7 +74,6 @@ margin: 15px;
   margin-left: 20px;
 }
 
-
 .Z-button:hover{
   background-color: gold;
   color: black;
@@ -91,3 +90,64 @@ margin: 15px;
   color: black;
 }
 
+/* - - - - - - - - - - - - - - - - - - - - MACBOOK - - - - - - - - - - - - - - - */
+
+@media (min-width: 1440px) {
+
+  /* - - - - - - Uvodny text - - - - - - - - -  */
+
+
+.text_container .uvod {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.text_container .lead {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  margin: 15px;
+  margin-top: 25px;
+}
+
+.text_container .info_text {
+  text-align: justify;
+  font-size: 20px;
+}
+}
+
+/* - - - - - - - - - - - - - - - - - ODMENA - - - - - - - - - - - - - - - */
+
+.odmena_container{
+  margin-top: 50px;
+  margin: 20px;
+  border: 2px solid white;
+  border-radius: 20px;
+  -webkit-border-radius: 20;
+  -moz-border-radius: 20;
+  -ms-border-radius: 20;
+  -o-border-radius: 20;
+}
+
+.odmena_container h1{
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.odmena_container p{
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  margin: 15px;
+  margin-top: 25px;
+}
+
+.odmena_container li{
+  font-size: 20px;
+  text-align: center;
+  list-style-position: inside;
+}

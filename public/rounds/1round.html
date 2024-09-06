@@ -33,22 +33,29 @@
 
     <input type="hidden" id="source-file" value="1round"> <!-- Identifikátor souboru -->
 
-    <div class="d-grid gap-2 col-6 mx-auto button-back-container">
+    <div class="container-fluid px-3" style="padding-left: 20px;">
+    <div class="d-grid gap-2 col-12 mx-auto button-back-container">
         <a href="/sezona2425.html" class="btn btn-primary button-back" role="button">Späť na Sezóna 2024/25 🔙</a>
+    </div>
     </div>
 
     <br>
-
-    <div class="d-grid gap-2 col-6 mx-auto button-other-matches-container">
-        <button id="load-file-btn" class="btn btn-primary button-other-matches">Natipované zápasy od ostatných superhrdinov 🦸🏻‍♂️</button>
-        <textarea id="file-content" class="form-control mt-3" rows="3" readonly></textarea>
+    <div class="container-fluid px-3">
+        <div class="d-grid gap-2 col-12 mx-auto button-other-matches-container">
+            <button id="load-file-btn" class="btn btn-primary button-other-matches">Natipované zápasy od ostatných superhrdinov 🦸🏻‍♂️</button>
+            <textarea id="file-content" class="form-control mt-3" rows="3" readonly></textarea>
+        </div>
     </div>
 
     <div class="title-container">
         <h1 class="mt-5">1. kolo (16.8 - 19.8.2024)</h1>
+        <br>
+        <a href="2round.html" type="button" class="btn btn-light next-button"> ➡️ Nasledujúce kolo</a>
     </div>
 
-    
+
+    <!-- TIPOVACIA TABULKA-->
+  <!--  
     <div class="tabulka">
         <table class="table">
             <tbody>
@@ -185,18 +192,19 @@
             </tbody>
         </table>
     </div>
+    -->
     
 
     
 <!-- VYSLEDNA TABULKA-->
- <!--
+ 
     <div id="carouselExample" class="carousel slide carousel-wrapper">
         <div class="carousel-inner">
 
           <div class="carousel-item active">
             <div class="vysledna_tabulka">
                 <div class="carousel-superhrdina">
-                    <p> &nbsp MATELKO 🦅 <br> &nbsp; ?pts</p>
+                    <p> &nbsp MATELKO 🦅 <br> &nbsp; 16pts, 2strelci</p>
                 </div>
                 <table class="table">
                     <tbody>
@@ -212,83 +220,83 @@
                         <tr>
                             <td class="medium-width">17.8. ----- 13:30</td>
                             <td> <br>IPS</td>
-                            <td class="small-width"> <br>:</td>
+                            <td class="small-width"> <br>0:2</td>
                             <td> <br>LIV</td>
-                            <td> <br>?, ?</td>
-                            <td> <br>??</td>
-                            <td> <br>?pts</td>
+                            <td> <br>2, Jota</td>
+                            <td> <br>✅✅</td>
+                            <td> <br>5pts</td>
                         </tr>
                         <tr>
                             <td class="medium-width">17.8. ----- 16:00</td>
                             <td> <br> ARS</td>
-                            <td class="small-width"> <br>:</td>
+                            <td class="small-width"> <br>2:0</td>
                             <td> <br>WOL</td>
-                            <td> <br>?, ?</td>
-                            <td> <br>??</td>
-                            <td> <br>?pts</td>
+                            <td> <br>1, White</td>
+                            <td> <br>✅❌</td>
+                            <td> <br>3pts</td>
                         </tr>
                         <tr>
                             <td class="medium-width">17.8. ----- 16:00</td>
                             <td> <br> EVE</td>
-                            <td class="small-width"> <br>:</td>
+                            <td class="small-width"> <br>0:3</td>
                             <td> <br>BRI</td>
-                            <td> <br>?, ?</td>
-                            <td> <br>??</td>
-                            <td> <br>?pts</td>
+                            <td> <br>X, Welbeck</td>
+                            <td> <br>❌✅</td>
+                            <td> <br>1pt</td>
                         </tr>
                         <tr>
                             <td class="medium-width">17.8. ----- 16:00</td>
                             <td> <br> NEW</td>
-                            <td class="small-width"> <br>:</td>
+                            <td class="small-width"> <br>1:0</td>
                             <td> <br>SOU</td>
-                            <td> <br>?, ?</td>
-                            <td> <br>??</td>
-                            <td> <br>?pts</td>
+                            <td> <br>1, Bruno G.</td>
+                            <td> <br>✅❌</td>
+                            <td> <br>3pts</td>
                         </tr>
                         <tr>
                             <td class="medium-width">17.8. ----- 16:00</td>
                             <td> <br> NOT</td>
-                            <td class="small-width"> <br>:</td>
+                            <td class="small-width"> <br>1:1</td>
                             <td> <br>BOU</td>
-                            <td> <br>?, ?</td>
-                            <td> <br>??</td>
-                            <td> <br>?pts</td>
+                            <td> <br>2, Gibbs-White</td>
+                            <td> <br>❌❌</td>
+                            <td> <br>0pts</td>
                         </tr>
                         <tr>
                             <td class="medium-width">17.8. ----- 18:30</td>
                             <td> <br> WHA</td>
-                            <td class="small-width"> <br>:</td>
+                            <td class="small-width"> <br>1:2</td>
                             <td> <br>AST</td>
-                            <td> <br>?, ?</td>
-                            <td> <br>??</td>
-                            <td> <br>?pts</td>
+                            <td> <br>2X, Watkins</td>
+                            <td> <br>✅❌</td>
+                            <td> <br>1pt</td>
                         </tr>
                         <tr>
                             <td class="medium-width">18.8. ----- 15:00</td>
                             <td> <br> BRE</td>
-                            <td class="small-width"> <br>:</td>
+                            <td class="small-width"> <br>2:1</td>
                             <td> <br>CRY</td>
-                            <td> <br>?, ?</td>
-                            <td> <br>??</td>
-                            <td> <br>?pts</td>
+                            <td> <br>2, Eze</td>
+                            <td> <br>❌❌</td>
+                            <td> <br>0pts</td>
                         </tr>
                         <tr>
                             <td class="medium-width">18.8. ----- 17:30</td>
                             <td> <br> CHE</td>
-                            <td class="small-width"> <br>:</td>
+                            <td class="small-width"> <br>0:2</td>
                             <td> <br>MCI</td>
-                            <td> <br>?, ?</td>
-                            <td> <br>??</td>
-                            <td> <br>?pts</td>
+                            <td> <br>X, Palmer</td>
+                            <td> <br>❌❌</td>
+                            <td> <br>0pts</td>
                         </tr>
                         <tr>
                             <td class="medium-width">19.8. ----- 21:00</td>
                             <td> <br> LEI</td>
-                            <td class="small-width"> <br>:</td>
+                            <td class="small-width"> <br>1:1</td>
                             <td> <br>TOT</td>
-                            <td> <br>?, ?</td>
-                            <td> <br>??</td>
-                            <td> <br>?pts</td>
+                            <td> <br>2, Solanke</td>
+                            <td> <br>❌❌</td>
+                            <td> <br>0pts</td>
                         </tr>
                     </tbody>
                 </table>
@@ -299,7 +307,7 @@
           <div class="carousel-item">
             <div class="vysledna_tabulka">
                 <div class="carousel-superhrdina">
-                    <p> &nbsp PATRES 🔴 <br> &nbsp; ?pts</p>
+                    <p> &nbsp PATRES 🔴 <br> &nbsp; 16pts, 1 strelec</p>
                 </div>
               <table class="table">
                   <tbody>
@@ -308,90 +316,90 @@
                           <td> <br>MUN</td>
                           <td class="small-width"> <br>2:1</td>
                           <td> <br>FUL</td>
-                          <td> <br>1, Garnacho</td>
-                          <td> <br>✅❌</td>
-                          <td> <br>3pts</td>
+                          <td> <br>X, ESR 😂</td>
+                          <td> <br>❌❌</td>
+                          <td> <br>0pts</td>
                       </tr>
                       <tr>
                           <td class="medium-width">17.8. ----- 13:30</td>
                           <td> <br>IPS</td>
-                          <td class="small-width"> <br>:</td>
+                          <td class="small-width"> <br>0:2</td>
                           <td> <br>LIV</td>
-                          <td> <br>?, ?</td>
-                          <td> <br>??</td>
-                          <td> <br>?pts</td>
+                          <td> <br>2, Szoboszlai</td>
+                          <td> <br>✅❌</td>
+                          <td> <br>3pts</td>
                       </tr>
                       <tr>
                           <td class="medium-width">17.8. ----- 16:00</td>
                           <td> <br> ARS</td>
-                          <td class="small-width"> <br>:</td>
+                          <td class="small-width"> <br>2:0</td>
                           <td> <br>WOL</td>
-                          <td> <br>?, ?</td>
-                          <td> <br>??</td>
-                          <td> <br>?pts</td>
+                          <td> <br>1, Zinchenko</td>
+                          <td> <br>✅❌</td>
+                          <td> <br>3pts</td>
                       </tr>
                       <tr>
                           <td class="medium-width">17.8. ----- 16:00</td>
                           <td> <br> EVE</td>
-                          <td class="small-width"> <br>:</td>
+                          <td class="small-width"> <br>0:3</td>
                           <td> <br>BRI</td>
-                          <td> <br>?, ?</td>
-                          <td> <br>??</td>
-                          <td> <br>?pts</td>
+                          <td> <br>X, Dunk</td>
+                          <td> <br>❌❌</td>
+                          <td> <br>0pts</td>
                       </tr>
                       <tr>
                           <td class="medium-width">17.8. ----- 16:00</td>
                           <td> <br> NEW</td>
-                          <td class="small-width"> <br>:</td>
+                          <td class="small-width"> <br>1:0</td>
                           <td> <br>SOU</td>
-                          <td> <br>?, ?</td>
-                          <td> <br>??</td>
-                          <td> <br>?pts</td>
+                          <td> <br>1, Gordon</td>
+                          <td> <br>✅❌</td>
+                          <td> <br>3pts</td>
                       </tr>
                       <tr>
                           <td class="medium-width">17.8. ----- 16:00</td>
                           <td> <br> NOT</td>
-                          <td class="small-width"> <br>:</td>
+                          <td class="small-width"> <br>1:1</td>
                           <td> <br>BOU</td>
-                          <td> <br>?, ?</td>
-                          <td> <br>??</td>
-                          <td> <br>?pts</td>
+                          <td> <br>1, Hudson-Odoi</td>
+                          <td> <br>❌❌</td>
+                          <td> <br>0pts</td>
                       </tr>
                       <tr>
                           <td class="medium-width">17.8. ----- 18:30</td>
                           <td> <br> WHA</td>
-                          <td class="small-width"> <br>:</td>
+                          <td class="small-width"> <br>1:2</td>
                           <td> <br>AST</td>
-                          <td> <br>?, ?</td>
-                          <td> <br>??</td>
-                          <td> <br>?pts</td>
+                          <td> <br>2, McGinn</td>
+                          <td> <br>✅❌</td>
+                          <td> <br>3pts</td>
                       </tr>
                       <tr>
                           <td class="medium-width">18.8. ----- 15:00</td>
                           <td> <br> BRE</td>
-                          <td class="small-width"> <br>:</td>
+                          <td class="small-width"> <br>1:2</td>
                           <td> <br>CRY</td>
-                          <td> <br>?, ?</td>
-                          <td> <br>??</td>
-                          <td> <br>?pts</td>
+                          <td> <br>1, Wissa</td>
+                          <td> <br>✅✅</td>
+                          <td> <br>4pts 🫨</td>
                       </tr>
                       <tr>
                           <td class="medium-width">18.8. ----- 17:30</td>
                           <td> <br> CHE</td>
-                          <td class="small-width"> <br>:</td>
+                          <td class="small-width"> <br>0:2</td>
                           <td> <br>MCI</td>
-                          <td> <br>?, ?</td>
-                          <td> <br>??</td>
-                          <td> <br>?pts</td>
+                          <td> <br>???</td>
+                          <td> <br>❌❌</td>
+                          <td> <br>0pts</td>
                       </tr>
                       <tr>
                           <td class="medium-width">19.8. ----- 21:00</td>
                           <td> <br> LEI</td>
-                          <td class="small-width"> <br>:</td>
+                          <td class="small-width"> <br>1:1</td>
                           <td> <br>TOT</td>
-                          <td> <br>?, ?</td>
-                          <td> <br>??</td>
-                          <td> <br>?pts</td>
+                          <td> <br>2, Maddison</td>
+                          <td> <br>❌❌</td>
+                          <td> <br>0pts</td>
                       </tr>
                   </tbody>
               </table>
@@ -402,7 +410,7 @@
           <div class="carousel-item">
             <div class="vysledna_tabulka">
                 <div class="carousel-superhrdina">
-                    <p> &nbsp KIKO 👹 <br> &nbsp; ?pts</p>
+                    <p> &nbsp KIKO 👹 <br> &nbsp; 20pts, 4strelci</p>
                 </div>
               <table class="table">
                   <tbody>
@@ -411,90 +419,90 @@
                           <td> <br>MUN</td>
                           <td class="small-width"> <br>2:1</td>
                           <td> <br>FUL</td>
-                          <td> <br>?, ?</td>
-                          <td> <br>??</td>
+                          <td> <br>1, Bruno</td>
+                          <td> <br>✅❌</td>
                           <td> <br>3pts</td>
                       </tr>
                       <tr>
                           <td class="medium-width">17.8. ----- 13:30</td>
                           <td> <br>IPS</td>
-                          <td class="small-width"> <br>:</td>
+                          <td class="small-width"> <br>0:2</td>
                           <td> <br>LIV</td>
-                          <td> <br>?, ?</td>
-                          <td> <br>??</td>
-                          <td> <br>?pts</td>
+                          <td> <br>2, Salah</td>
+                          <td> <br>✅✅</td>
+                          <td> <br>3pts</td>
                       </tr>
                       <tr>
                           <td class="medium-width">17.8. ----- 16:00</td>
                           <td> <br> ARS</td>
-                          <td class="small-width"> <br>:</td>
+                          <td class="small-width"> <br>2:0</td>
                           <td> <br>WOL</td>
-                          <td> <br>?, ?</td>
-                          <td> <br>??</td>
-                          <td> <br>?pts</td>
+                          <td> <br>1, Havertz</td>
+                          <td> <br>✅✅</td>
+                          <td> <br>5pts 👍🏻</td>
                       </tr>
                       <tr>
                           <td class="medium-width">17.8. ----- 16:00</td>
                           <td> <br> EVE</td>
-                          <td class="small-width"> <br>:</td>
+                          <td class="small-width"> <br>0:3</td>
                           <td> <br>BRI</td>
-                          <td> <br>?, ?</td>
-                          <td> <br>??</td>
-                          <td> <br>?pts</td>
+                          <td> <br>X, DCL</td>
+                          <td> <br>❌❌</td>
+                          <td> <br>0pts</td>
                       </tr>
                       <tr>
                           <td class="medium-width">17.8. ----- 16:00</td>
                           <td> <br> NEW</td>
-                          <td class="small-width"> <br>:</td>
+                          <td class="small-width"> <br>1:0</td>
                           <td> <br>SOU</td>
-                          <td> <br>?, ?</td>
-                          <td> <br>??</td>
-                          <td> <br>?pts</td>
+                          <td> <br>1, Isak</td>
+                          <td> <br>✅❌</td>
+                          <td> <br>3pts</td>
                       </tr>
                       <tr>
                           <td class="medium-width">17.8. ----- 16:00</td>
                           <td> <br> NOT</td>
-                          <td class="small-width"> <br>:</td>
+                          <td class="small-width"> <br>1:1</td>
                           <td> <br>BOU</td>
-                          <td> <br>?, ?</td>
-                          <td> <br>??</td>
-                          <td> <br>?pts</td>
+                          <td> <br>1X, Wood</td>
+                          <td> <br>✅✅</td>
+                          <td> <br>2pts 🫨</td>
                       </tr>
                       <tr>
                           <td class="medium-width">17.8. ----- 18:30</td>
                           <td> <br> WHA</td>
-                          <td class="small-width"> <br>:</td>
+                          <td class="small-width"> <br>1:2</td>
                           <td> <br>AST</td>
-                          <td> <br>?, ?</td>
-                          <td> <br>??</td>
-                          <td> <br>?pts</td>
+                          <td> <br>1X, Bowen</td>
+                          <td> <br>❌❌</td>
+                          <td> <br>0pts</td>
                       </tr>
                       <tr>
                           <td class="medium-width">18.8. ----- 15:00</td>
                           <td> <br> BRE</td>
-                          <td class="small-width"> <br>:</td>
+                          <td class="small-width"> <br>2:1</td>
                           <td> <br>CRY</td>
-                          <td> <br>?, ?</td>
-                          <td> <br>??</td>
-                          <td> <br>?pts</td>
+                          <td> <br>2, Mateta</td>
+                          <td> <br>❌❌</td>
+                          <td> <br>0pts</td>
                       </tr>
                       <tr>
                           <td class="medium-width">18.8. ----- 17:30</td>
                           <td> <br> CHE</td>
-                          <td class="small-width"> <br>:</td>
+                          <td class="small-width"> <br>0:2</td>
                           <td> <br>MCI</td>
-                          <td> <br>?, ?</td>
-                          <td> <br>??</td>
-                          <td> <br>?pts</td>
+                          <td> <br>2, Haaland</td>
+                          <td> <br>✅✅</td>
+                          <td> <br>4pts</td>
                       </tr>
                       <tr>
                           <td class="medium-width">19.8. ----- 21:00</td>
                           <td> <br> LEI</td>
-                          <td class="small-width"> <br>:</td>
+                          <td class="small-width"> <br>1:1</td>
                           <td> <br>TOT</td>
-                          <td> <br>?, ?</td>
-                          <td> <br>??</td>
-                          <td> <br>?pts</td>
+                          <td> <br>2, Son</td>
+                          <td> <br>❌❌</td>
+                          <td> <br>0pts</td>
                       </tr>
                   </tbody>
               </table>
@@ -510,7 +518,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
--->
+
 
       
 

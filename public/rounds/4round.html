@@ -33,157 +33,157 @@
 
     <input type="hidden" id="source-file" value="4round"> <!-- Identifikátor souboru -->
 
-    <div class="d-grid gap-2 col-6 mx-auto button-back-container">
-        <a href="/sezona2425.html" class="btn btn-primary button-back" role="button">Späť na Sezóna 2024/25 🔙</a>
+    <div class="container-fluid px-3" style="padding-left: 20px;">
+        <div class="d-grid gap-2 col-12 mx-auto button-back-container">
+            <a href="/sezona2425.html" class="btn btn-primary button-back" role="button">Späť na Sezóna 2024/25 🔙</a>
+        </div>
     </div>
 
     <br>
 
-    <div class="d-grid gap-2 col-6 mx-auto button-other-matches-container">
-        <button id="load-file-btn" class="btn btn-primary button-other-matches">Natipované zápasy od ostatných superhrdinov 🦸🏻‍♂️</button>
-        <textarea id="file-content" class="form-control mt-3" rows="3" readonly></textarea>
+    <div class="container-fluid px-3">
+        <div class="d-grid gap-2 col-12 mx-auto button-other-matches-container">
+            <button id="load-file-btn" class="btn btn-primary button-other-matches">Natipované zápasy od ostatných superhrdinov 🦸🏻‍♂️</button>
+            <textarea id="file-content" class="form-control mt-3" rows="3" readonly></textarea>
+        </div>
     </div>
 
     <div class="title-container">
-        <h1 class="mt-5">4. kolo</h1>
+        <h1 class="mt-5">4. kolo (14.9 - 15.9.2024)</h1>
+        <a href="3round.html" type="button" class="btn btn-light previous-button"> ⬅️ Predchádzajúce kolo</a>
+        <br> <br>
+        <a href="5round.html" type="button" class="btn btn-light next-button"> Nasledujúce kolo ➡️</a>
     </div>
 
-    <div class="tabulka">
-      <p>Comming soon...⏳</p>
 
-       <!-- <table class="table">
+    <div class="tabulka">
+
+        <table class="table">
             <tbody>
                 <tr>
-                    <td class="medium-width">16.8. ----- 21:00</td>
-                    <td> <br> MUN</td>
+                    <td class="medium-width">14.9. ----- 13:30</td>
+                    <td> <br> SOU</td>
                     <td class="small-width"> <br>:</td>
-                    <td> <br>FUL</td>
+                    <td> <br>MUN</td>
                     <td>
                         <div class="guess_area">
-                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="mun-ful_TP">
-                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('mun-ful_TP', this)" id="mun-ful_B">✔️</button>
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="sou-mun_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('sou-mun_TP', this)" id="sou-mun_B">✔️</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="medium-width">14.9. ----- 16:00</td>
+                    <td> <br> BRI</td>
+                    <td class="small-width"> <br>:</td>
+                    <td> <br>IPS</td>
+                    <td>
+                        <div class="guess_area">
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="bri-ips_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('bri-ips_TP', this)" id="bri-ips_B">✔️</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="medium-width">14.9. ----- 16:00</td>
+                    <td> <br> CRY</td>
+                    <td class="small-width"> <br>:</td>
+                    <td> <br>LEI</td>
+                    <td>
+                        <div class="guess_area">
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="cry-lei_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('cry-lei_TP', this)" id="cry-lei_B">✔️</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="medium-width">14.9. ----- 16:00</td>
+                    <td> <br> FUL</td>
+                    <td class="small-width"> <br>:</td>
+                    <td> <br>WHU</td>
+                    <td>
+                        <div class="guess_area">
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="ful-whu_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('ful-whu_TP', this)" id="ful-whu_B">✔️</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="medium-width">14.9. ----- 16:00</td>
+                    <td> <br> LIV</td>
+                    <td class="small-width"> <br>:</td>
+                    <td> <br>NOT</td>
+                    <td>
+                        <div class="guess_area">
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="liv-not_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('liv-not_TP', this)" id="liv-not_B">✔️</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="medium-width">14.9. ----- 16:00</td>
+                    <td> <br> MCI</td>
+                    <td class="small-width"> <br>:</td>
+                    <td> <br>BRE</td>
+                    <td>
+                        <div class="guess_area">
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="mci-bre_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('mci-bre_TP', this)" id="mci-bre_B">✔️</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="medium-width">14.9. ----- 18:30</td>
+                    <td> <br> AST</td>
+                    <td class="small-width"> <br>:</td>
+                    <td> <br>EVE</td>
+                    <td>
+                        <div class="guess_area">
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="ast-eve_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('ast-eve_TP', this)" id="ast-eve_B">✔️</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="medium-width">14.9. ----- 21:00</td>
+                    <td> <br> BOU</td>
+                    <td class="small-width"> <br>:</td>
+                    <td> <br>CHE</td>
+                    <td>
+                        <div class="guess_area">
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="bou-che_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('bou-che_TP', this)" id="bou-che_B">✔️</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="medium-width">15.9. ----- 15:00</td>
+                    <td> <br> TOT</td>
+                    <td class="small-width"> <br>:</td>
+                    <td> <br>ARS</td>
+                    <td>
+                        <div class="guess_area">
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="tot-ars_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('tot-ars_TP', this)" id="tot-ars_B">✔️</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="medium-width">15.9. ----- 17:30</td>
+                    <td> <br> WOL</td>
+                    <td class="small-width"> <br>:</td>
+                    <td> <br>NEW</td>
+                    <td>
+                        <div class="guess_area">
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="wol-new_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('wol-new_TP', this)" id="wol-new_B">✔️</button>
                         </div>
                     </td>
                 </tr>
 
-                <tr>
-                    <td class="medium-width">17.8. ----- 13:30</td>
-                    <td> <br> IPS</td>
-                    <td class="small-width"> <br>:</td>
-                    <td> <br>LIV</td>
-                    <td>
-                        <div class="guess_area">
-                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="ips-liv_TP">
-                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('ips-liv_TP', this)" id="ips-liv_B">✔️</button>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="medium-width">17.8. ----- 16:00</td>
-                    <td> <br> ARS</td>
-                    <td class="small-width"> <br>:</td>
-                    <td> <br>WOL</td>
-                    <td>
-                        <div class="guess_area">
-                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="ars-wol_TP">
-                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('ars-wol_TP', this)" id="ars-wol_B">✔️</button>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="medium-width">17.8. ----- 16:00</td>
-                    <td> <br> EVE</td>
-                    <td class="small-width"> <br>:</td>
-                    <td> <br>BRI</td>
-                    <td>
-                        <div class="guess_area">
-                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="eve-bri_TP">
-                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('ars-wol_TP', this)" id="eve-bri_B">✔️</button>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="medium-width">17.8. ----- 16:00</td>
-                    <td> <br> NEW</td>
-                    <td class="small-width"> <br>:</td>
-                    <td> <br>SOU</td>
-                    <td>
-                        <div class="guess_area">
-                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="new-sou_TP">
-                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('new-sou_TP', this)" id="new-sou_B">✔️</button>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="medium-width">17.8. ----- 16:00</td>
-                    <td> <br> NOT</td>
-                    <td class="small-width"> <br>:</td>
-                    <td> <br>BOU</td>
-                    <td>
-                        <div class="guess_area">
-                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="not-bou_TP">
-                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('not-bou_TP', this)" id="not-bou_B">✔️</button>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="medium-width">17.8. ----- 18:30</td>
-                    <td> <br> WHA</td>
-                    <td class="small-width"> <br>:</td>
-                    <td> <br>AST</td>
-                    <td>
-                        <div class="guess_area">
-                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="wha-ast_TP">
-                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('wha-ast_TP', this)" id="wha-ast_B">✔️</button>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="medium-width">18.8. ----- 15:00</td>
-                    <td> <br> BRE</td>
-                    <td class="small-width"> <br>:</td>
-                    <td> <br>CRY</td>
-                    <td>
-                        <div class="guess_area">
-                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="bre-cry_TP">
-                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('bre-cry_TP', this)" id="bre-cry_B">✔️</button>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="medium-width">18.8. ----- 17:30</td>
-                    <td> <br> CHE</td>
-                    <td class="small-width"> <br>:</td>
-                    <td> <br>MCI</td>
-                    <td>
-                        <div class="guess_area">
-                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="che-mci_TP">
-                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('che-mci_TP', this)" id="che-mci_B">✔️</button>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="medium-width">19.8. ----- 21:00</td>
-                    <td> <br> LEI</td>
-                    <td class="small-width"> <br>:</td>
-                    <td> <br>TOT</td>
-                    <td>
-                        <div class="guess_area">
-                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="lei-tot_TP">
-                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('lei-tot_TP', this)" id="lei-tot_B">✔️</button>
-                        </div>
-                    </td>
-                </tr>
+                
             </tbody>
-        </table> -->
+        </table> 
     </div>
 
     <script>

@@ -1,0 +1,40 @@
+🦸🏻‍♂️: Matelko, ⚽️: BRI-MU, 📊: 1X, Joao Pedro
+🦸🏻‍♂️: Kiko, ⚽️: BRI-MU, 📊: 2, Rashford
+🦸🏻‍♂️: Patres, ⚽️: BRI-MU, 📊: 2, Bruno
+
+🦸🏻‍♂️: Matelko, ⚽️: CRY-WHU, 📊: X, Antonio
+🦸🏻‍♂️: Kiko, ⚽️: CRY-WHU, 📊: 1X, Mateta
+🦸🏻‍♂️: Patres, ⚽️: CRY-WHU, 📊: 2, Bowen
+
+🦸🏻‍♂️: Matelko, ⚽️: FUL-LEI, 📊: X, Muniz
+🦸🏻‍♂️: Kiko, ⚽️: FUL-LEI, 📊: 1, Pereira
+🦸🏻‍♂️: Patres, ⚽️: FUL-LEI, 📊: 1, ESR
+
+🦸🏻‍♂️: Matelko, ⚽️: MCI-IPS, 📊: 1, Haaland
+🦸🏻‍♂️: Kiko, ⚽️: MCI-IPS, 📊: 1, Silva
+🦸🏻‍♂️: Patres, ⚽️: MCI-IPS, 📊: 1, Foden
+
+🦸🏻‍♂️: Matelko, ⚽️: SOU-NOT, 📊: 2X, Odoi
+🦸🏻‍♂️: Kiko, ⚽️: SOU-NOT, 📊: 2, Elanga
+🦸🏻‍♂️: Patres, ⚽️: SOU-NOT, 📊: 1, Armstrong
+
+🦸🏻‍♂️: Matelko, ⚽️: TOT-EVE, 📊: 1, Johnson
+🦸🏻‍♂️: Kiko, ⚽️: TOT-EVE, 📊: 1, Son
+🦸🏻‍♂️: Patres, ⚽️: TOT-EVE, 📊: 1, Maddison
+
+🦸🏻‍♂️: Matelko, ⚽️: AST-ARS, 📊: 2, Ode
+🦸🏻‍♂️: Kiko, ⚽️: AST-ARS, 📊: 2X, Saka
+🦸🏻‍♂️: Patres, ⚽️: AST-ARS, 📊: 2, Havertz
+
+
+🦸🏻‍♂️: Matelko, ⚽️: bou-new_TP, 📊: 2, Isak, ⏱️: 25.08.2024, 11:31:25
+🦸🏻‍♂️: Matelko, ⚽️: wol-che_TP, 📊: 2, Jackson, ⏱️: 25.08.2024, 11:31:37
+🦸🏻‍♂️: Matelko, ⚽️: liv-bre_TP, 📊: 1, Jota, ⏱️: 25.08.2024, 11:31:48
+
+🦸🏻‍♂️: Patres, ⚽️: bou-new_TP, 📊: 2, Gordon, ⏱️: 25.08.2024, 13:54:09
+🦸🏻‍♂️: Patres, ⚽️: wol-che_TP, 📊: 2, Palmer, ⏱️: 25.08.2024, 13:54:10
+🦸🏻‍♂️: Patres, ⚽️: liv-bre_TP, 📊: 1, Salah, ⏱️: 25.08.2024, 13:54:11
+
+🦸🏻‍♂️: Kiko, ⚽️: bou-new_TP, 📊: 2,Bruno, ⏱️: 25.08.2024, 15:04:23
+🦸🏻‍♂️: Kiko, ⚽️: wol-che_TP, 📊: 2, madueke, ⏱️: 25.08.2024, 15:04:55
+🦸🏻‍♂️: Kiko, ⚽️: liv-bre_TP, 📊: 1, Szoboszlai, ⏱️: 25.08.2024, 15:05:32

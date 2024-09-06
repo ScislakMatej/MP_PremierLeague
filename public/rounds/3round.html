@@ -33,159 +33,494 @@
 
     <input type="hidden" id="source-file" value="3round"> <!-- Identifikátor souboru -->
 
-    <div class="d-grid gap-2 col-6 mx-auto button-back-container">
-        <a href="/sezona2425.html" class="btn btn-primary button-back" role="button">Späť na Sezóna 2024/25 🔙</a>
+    <div class="container-fluid px-3" style="padding-left: 20px;">
+        <div class="d-grid gap-2 col-12 mx-auto button-back-container">
+            <a href="/sezona2425.html" class="btn btn-primary button-back" role="button">Späť na Sezóna 2024/25 🔙</a>
+        </div>
     </div>
 
     <br>
 
-    <div class="d-grid gap-2 col-6 mx-auto button-other-matches-container">
-        <button id="load-file-btn" class="btn btn-primary button-other-matches">Natipované zápasy od ostatných superhrdinov 🦸🏻‍♂️</button>
-        <textarea id="file-content" class="form-control mt-3" rows="3" readonly></textarea>
+    <div class="container-fluid px-3">
+        <div class="d-grid gap-2 col-12 mx-auto button-other-matches-container">
+            <button id="load-file-btn" class="btn btn-primary button-other-matches">Natipované zápasy od ostatných superhrdinov 🦸🏻‍♂️</button>
+            <textarea id="file-content" class="form-control mt-3" rows="3" readonly></textarea>
+        </div>
     </div>
 
     <div class="title-container">
-        <h1 class="mt-5">3. kolo</h1>
+        <h1 class="mt-5">3. kolo (31.8 - 1.9.2024)</h1>
+        <br>
+        <a href="2round.html" type="button" class="btn btn-light previous-button"> ⬅️ Predchádzajúce kolo</a>
+        <br> <br>
+        <a href="4round.html" type="button" class="btn btn-light next-button"> Nasledujúce kolo ➡️</a>
     </div>
 
+ <!-- 
     <div class="tabulka">
-      <p>Comming soon...⏳</p>
+      
 
-       <!-- <table class="table">
+        <table class="table">
             <tbody>
                 <tr>
-                    <td class="medium-width">16.8. ----- 21:00</td>
-                    <td> <br> MUN</td>
-                    <td class="small-width"> <br>:</td>
-                    <td> <br>FUL</td>
-                    <td>
-                        <div class="guess_area">
-                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="mun-ful_TP">
-                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('mun-ful_TP', this)" id="mun-ful_B">✔️</button>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="medium-width">17.8. ----- 13:30</td>
-                    <td> <br> IPS</td>
-                    <td class="small-width"> <br>:</td>
-                    <td> <br>LIV</td>
-                    <td>
-                        <div class="guess_area">
-                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="ips-liv_TP">
-                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('ips-liv_TP', this)" id="ips-liv_B">✔️</button>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="medium-width">17.8. ----- 16:00</td>
+                    <td class="medium-width">31.8. ----- 13:30</td>
                     <td> <br> ARS</td>
-                    <td class="small-width"> <br>:</td>
-                    <td> <br>WOL</td>
-                    <td>
-                        <div class="guess_area">
-                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="ars-wol_TP">
-                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('ars-wol_TP', this)" id="ars-wol_B">✔️</button>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="medium-width">17.8. ----- 16:00</td>
-                    <td> <br> EVE</td>
                     <td class="small-width"> <br>:</td>
                     <td> <br>BRI</td>
                     <td>
                         <div class="guess_area">
-                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="eve-bri_TP">
-                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('ars-wol_TP', this)" id="eve-bri_B">✔️</button>
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="ars-bri_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('ars-bri_TP', this)" id="ars-bri_B">✔️</button>
                         </div>
                     </td>
                 </tr>
 
                 <tr>
-                    <td class="medium-width">17.8. ----- 16:00</td>
-                    <td> <br> NEW</td>
+                    <td class="medium-width">31.8. ----- 16:00</td>
+                    <td> <br> BRE</td>
                     <td class="small-width"> <br>:</td>
                     <td> <br>SOU</td>
                     <td>
                         <div class="guess_area">
-                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="new-sou_TP">
-                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('new-sou_TP', this)" id="new-sou_B">✔️</button>
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="bre-sou_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('bre-sou_TP', this)" id="bre-sou_B">✔️</button>
                         </div>
                     </td>
                 </tr>
 
                 <tr>
-                    <td class="medium-width">17.8. ----- 16:00</td>
-                    <td> <br> NOT</td>
+                    <td class="medium-width">31.8. ----- 16:00</td>
+                    <td> <br> EVE</td>
                     <td class="small-width"> <br>:</td>
                     <td> <br>BOU</td>
                     <td>
                         <div class="guess_area">
-                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="not-bou_TP">
-                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('not-bou_TP', this)" id="not-bou_B">✔️</button>
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="eve-bou_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('eve-bou_TP', this)" id="eve-bou_B">✔️</button>
                         </div>
                     </td>
                 </tr>
 
                 <tr>
-                    <td class="medium-width">17.8. ----- 18:30</td>
-                    <td> <br> WHA</td>
+                    <td class="medium-width">31.8. ----- 16:00</td>
+                    <td> <br> IPS</td>
+                    <td class="small-width"> <br>:</td>
+                    <td> <br>FUL</td>
+                    <td>
+                        <div class="guess_area">
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="ips-ful_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('ips-ful_TP', this)" id="ips-ful_B">✔️</button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="medium-width">31.8. ----- 16:00</td>
+                    <td> <br> LEI</td>
                     <td class="small-width"> <br>:</td>
                     <td> <br>AST</td>
                     <td>
                         <div class="guess_area">
-                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="wha-ast_TP">
-                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('wha-ast_TP', this)" id="wha-ast_B">✔️</button>
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="lei-ast_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('lei-ast_TP', this)" id="lei-ast_B">✔️</button>
                         </div>
                     </td>
                 </tr>
 
                 <tr>
-                    <td class="medium-width">18.8. ----- 15:00</td>
-                    <td> <br> BRE</td>
+                    <td class="medium-width">31.8. ----- 16:00</td>
+                    <td> <br> NOT</td>
                     <td class="small-width"> <br>:</td>
-                    <td> <br>CRY</td>
+                    <td> <br>WOL</td>
                     <td>
                         <div class="guess_area">
-                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="bre-cry_TP">
-                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('bre-cry_TP', this)" id="bre-cry_B">✔️</button>
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="not-wol_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('not-wol_TP', this)" id="not-wol_B">✔️</button>
                         </div>
                     </td>
                 </tr>
 
                 <tr>
-                    <td class="medium-width">18.8. ----- 17:30</td>
-                    <td> <br> CHE</td>
+                    <td class="medium-width">31.8. ----- 16:00</td>
+                    <td> <br> WHU</td>
                     <td class="small-width"> <br>:</td>
                     <td> <br>MCI</td>
                     <td>
                         <div class="guess_area">
-                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="che-mci_TP">
-                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('che-mci_TP', this)" id="che-mci_B">✔️</button>
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="whu-mci_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('whu-mci_TP', this)" id="whu-mci_B">✔️</button>
                         </div>
                     </td>
                 </tr>
 
                 <tr>
-                    <td class="medium-width">19.8. ----- 21:00</td>
-                    <td> <br> LEI</td>
+                    <td class="medium-width">1.9. &nbsp;&nbsp;&nbsp;   ----- 14:30</td>
+                    <td> <br> CHE</td>
+                    <td class="small-width"> <br>:</td>
+                    <td> <br>CRY</td>
+                    <td>
+                        <div class="guess_area">
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="che-cry_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('che-cry_TP', this)" id="che-cry_B">✔️</button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="medium-width">1.9. &nbsp;&nbsp;&nbsp;   ----- 14:30</td>
+                    <td> <br> NEW</td>
                     <td class="small-width"> <br>:</td>
                     <td> <br>TOT</td>
                     <td>
                         <div class="guess_area">
-                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="lei-tot_TP">
-                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('lei-tot_TP', this)" id="lei-tot_B">✔️</button>
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="new-tot_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('new-tot_TP', this)" id="new-tot_B">✔️</button>
                         </div>
                     </td>
                 </tr>
-            </tbody>
-        </table> -->
-    </div>
 
+                <tr>
+                    <td class="medium-width">1.9. &nbsp;&nbsp;&nbsp;   ----- 17:00</td>
+                    <td> <br> MUN</td>
+                    <td class="small-width"> <br>:</td>
+                    <td> <br>LIV</td>
+                    <td>
+                        <div class="guess_area">
+                            <input type="text" class="form-control guess_input" placeholder="Tip, strelec" aria-label="Tip, strelec" id="mun-liv_TP">
+                            <button class="btn btn-outline-secondary guess_button" type="button" onclick="submitRow('mun-liv_TP', this)" id="mun-liv_B">✔️</button>
+                        </div>
+                    </td>
+                </tr>
+
+
+            </tbody>
+        </table> 
+    </div>
+-->  
+
+<!-- VYSLEDNA TABULKA-->
+ 
+<div id="carouselExample" class="carousel slide carousel-wrapper">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="vysledna_tabulka">
+            <div class="carousel-superhrdina">
+                <p> &nbsp MATELKO 🦅 <br> &nbsp; 12pts, 1s</p>
+            </div>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td class="medium-width">31.8. ----- 13:30</td>
+                        <td> <br>ARS</td>
+                        <td class="small-width"> <br>1:1</td>
+                        <td> <br>BRI</td>
+                        <td> <br>1, Saka</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">31.8. ----- 16:00</td>
+                        <td> <br>BRE</td>
+                        <td class="small-width"> <br>1:1</td>
+                        <td> <br>SOU</td>
+                        <td> <br>1, Wissa</td>
+                        <td> <br>✅✅</td>
+                        <td> <br>3b</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">31.8. ----- 16:00</td>
+                        <td> <br>EVE</td>
+                        <td class="small-width"> <br>2:3</td>
+                        <td> <br>BOU</td>
+                        <td> <br>X, Evanilson</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">31.8. ----- 16:00</td>
+                        <td> <br>IPS</td>
+                        <td class="small-width"> <br>1:1</td>
+                        <td> <br>FUL</td>
+                        <td> <br>2, Iwobi</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">31.8. ----- 16:00</td>
+                        <td> <br>LEI</td>
+                        <td class="small-width"> <br>1:2</td>
+                        <td> <br>AST</td>
+                        <td> <br>2, Bailey</td>
+                        <td> <br>✅❌</td>
+                        <td> <br>3b</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">31.8. ----- 16:00</td>
+                        <td> <br>NOT</td>
+                        <td class="small-width"> <br>1:1</td>
+                        <td> <br>WOL</td>
+                        <td> <br>1, Gibbs-Wh</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">31.8. ----- 18:30</td>
+                        <td> <br>WHU</td>
+                        <td class="small-width"> <br>1:1</td>
+                        <td> <br>MCI</td>
+                        <td> <br>2, Gvardiol</td>
+                        <td> <br>✅❌</td>
+                        <td> <br>3b</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">1.9. ----- 14:30</td>
+                        <td> <br>CHE</td>
+                        <td class="small-width"> <br>1:1</td>
+                        <td> <br>CRY</td>
+                        <td> <br>1, Palmer</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">1.9. ----- 14:30</td>
+                        <td> <br>NEW</td>
+                        <td class="small-width"> <br>2:1</td>
+                        <td> <br>TOT</td>
+                        <td> <br>2X, Son</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">1.9. ----- 17:00</td>
+                        <td> <br>MUN</td>
+                        <td class="small-width"> <br>1:1</td>
+                        <td> <br>LIV</td>
+                        <td> <br>2, Jota</td>
+                        <td> <br>✅❌</td>
+                        <td> <br>3b</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+          </div>
+      </div>
+
+
+      <div class="carousel-item">
+        <div class="vysledna_tabulka">
+            <div class="carousel-superhrdina">
+                <p> &nbsp PATRES 🔴 <br> &nbsp; 13pts, 3s</p>
+            </div>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td class="medium-width">31.8. ----- 13:30</td>
+                        <td> <br>ARS</td>
+                        <td class="small-width"> <br>1:1</td>
+                        <td> <br>BRI</td>
+                        <td> <br>???</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">31.8. ----- 16:00</td>
+                        <td> <br>BRE</td>
+                        <td class="small-width"> <br>1:1</td>
+                        <td> <br>SOU</td>
+                        <td> <br>???</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">31.8. ----- 16:00</td>
+                        <td> <br>EVE</td>
+                        <td class="small-width"> <br>2:3</td>
+                        <td> <br>BOU</td>
+                        <td> <br>???</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">31.8. ----- 16:00</td>
+                        <td> <br>IPS</td>
+                        <td class="small-width"> <br>1:1</td>
+                        <td> <br>FUL</td>
+                        <td> <br>???</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">31.8. ----- 16:00</td>
+                        <td> <br>LEI</td>
+                        <td class="small-width"> <br>1:2</td>
+                        <td> <br>AST</td>
+                        <td> <br>???</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">31.8. ----- 16:00</td>
+                        <td> <br>NOT</td>
+                        <td class="small-width"> <br>1:1</td>
+                        <td> <br>WOL</td>
+                        <td> <br>???</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">31.8. ----- 18:30</td>
+                        <td> <br>WHU</td>
+                        <td class="small-width"> <br>1:1</td>
+                        <td> <br>MCI</td>
+                        <td> <br>2, KDB</td>
+                        <td> <br>✅❌</td>
+                        <td> <br>3b</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">1.9. ----- 14:30</td>
+                        <td> <br>CHE</td>
+                        <td class="small-width"> <br>1:1</td>
+                        <td> <br>CRY</td>
+                        <td> <br>1, Jackson</td>
+                        <td> <br>❌✅</td>
+                        <td> <br>1b</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">1.9. ----- 14:30</td>
+                        <td> <br>NEW</td>
+                        <td class="small-width"> <br>2:1</td>
+                        <td> <br>TOT</td>
+                        <td> <br>1, Barnes</td>
+                        <td> <br>✅✅</td>
+                        <td> <br>5b</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">1.9. ----- 17:00</td>
+                        <td> <br>MUN</td>
+                        <td class="small-width"> <br>1:1</td>
+                        <td> <br>LIV</td>
+                        <td> <br>2, Salah</td>
+                        <td> <br>✅✅</td>
+                        <td> <br>4b</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
+
+
+      <div class="carousel-item">
+        <div class="vysledna_tabulka">
+            <div class="carousel-superhrdina">
+                <p> &nbsp KIKO 👹 <br> &nbsp; 15pts, 3s</p>
+            </div>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td class="medium-width">31.8. ----- 13:30</td>
+                        <td> <br>ARS</td>
+                        <td class="small-width"> <br>1:1</td>
+                        <td> <br>BRI</td>
+                        <td> <br>???</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">31.8. ----- 16:00</td>
+                        <td> <br>BRE</td>
+                        <td class="small-width"> <br>1:1</td>
+                        <td> <br>SOU</td>
+                        <td> <br>1, Mbuemo</td>
+                        <td> <br>✅✅</td>
+                        <td> <br>5b</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">31.8. ----- 16:00</td>
+                        <td> <br>EVE</td>
+                        <td class="small-width"> <br>2:3</td>
+                        <td> <br>BOU</td>
+                        <td> <br>2X, Tavernier</td>
+                        <td> <br>✅❌</td>
+                        <td> <br>1b</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">31.8. ----- 16:00</td>
+                        <td> <br>IPS</td>
+                        <td class="small-width"> <br>1:1</td>
+                        <td> <br>FUL</td>
+                        <td> <br>2, Pereira</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">31.8. ----- 16:00</td>
+                        <td> <br>LEI</td>
+                        <td class="small-width"> <br>1:2</td>
+                        <td> <br>AST</td>
+                        <td> <br>2, Watkins</td>
+                        <td> <br>✅❌</td>
+                        <td> <br>3b</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">31.8. ----- 16:00</td>
+                        <td> <br>NOT</td>
+                        <td class="small-width"> <br>1:1</td>
+                        <td> <br>WOL</td>
+                        <td> <br>1X, Wood</td>
+                        <td> <br>✅✅</td>
+                        <td> <br>2b</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">31.8. ----- 18:30</td>
+                        <td> <br>WHU</td>
+                        <td class="small-width"> <br>1:1</td>
+                        <td> <br>MCI</td>
+                        <td> <br>2, Haaland</td>
+                        <td> <br>✅✅</td>
+                        <td> <br>4b</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">1.9. ----- 14:30</td>
+                        <td> <br>CHE</td>
+                        <td class="small-width"> <br>1:1</td>
+                        <td> <br>CRY</td>
+                        <td> <br>1, Madueke</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">1.9. ----- 14:30</td>
+                        <td> <br>NEW</td>
+                        <td class="small-width"> <br>2:1</td>
+                        <td> <br>TOT</td>
+                        <td> <br>2X, Isak</td>
+                        <td> <br>❌✅</td>
+                        <td> <br>🖕</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">1.9. ----- 17:00</td>
+                        <td> <br>MUN</td>
+                        <td class="small-width"> <br>1:1</td>
+                        <td> <br>LIV</td>
+                        <td> <br>X, Bruno</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             // Načítanie užívateľského mena a ďalšie úpravy
