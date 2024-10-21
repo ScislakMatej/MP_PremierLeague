@@ -12,19 +12,17 @@
 
 ## TO DO
 
-- doplnit historia
-- sezona 2425 - doplnit margin
+- uprava ROUNDS
 - doplnit ocenenie
 
 ## BUGS
 
 - farba buttonu sa nezmeni na zelenu
 - ak pouzivatel zada zle meno, vyskoci hlaska. Ak potom zada spravne, hlaska je stale tam
+- zmenit v navbare Players --> Superhrdinovia
 - ak sa uz tipne, chcem aby ostalo NATIPOVANE!
 
-## INFO
-
-- info pre timy (tvorba tabulky UZ je v /teams_info)
+## ON MIND
 
 ### RULES - game
 

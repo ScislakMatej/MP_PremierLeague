@@ -27,6 +27,8 @@
     height: 350px !important;
   }
 
+  
+
 /* - - - - VYSLEDNA TABULKA - - - - */
 .vysledna_tabulka {
   width: 900px !important;
@@ -106,6 +108,7 @@ body {
     background-color: green !important;
     color: white;
 }
+
 /* - - - - - - - - - - - - - - - BUTTONS - - - - - - - - - - - - - - - - - - -  */
 
 .button-back{

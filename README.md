@@ -1,31 +1,28 @@
-# M&P - Premier League 2024/25
+# M&P PremierLeague Web App
 
-## DONE
+## About
 
-- pouzivatel sa prihlasi - jeho meno je viditelne
-- udaje pridava vo svojom mene
-- je to na Azure
-- neprihlaseny pouzivatel nemoze tipovat
-- pri zadani udajov sa zobrazia v textovom poli
-- udaje pre kazde kolo su ulozene do samostatneho suboru
-- pouzivatel vie zobrazit, ako tipli ostatni pouzivatelia
+The **M&P PremierLeague Web App** is a game where all players predict the results of Premier League matches and goal scorers every week. 
+They earn points for every correct guess. The rules are more complex, described in detail in the section of the web app called 'Pravidla'.
 
-## TO DO
 
-- uprava ROUNDS
-- doplnit ocenenie
+## Features
 
-## BUGS
+- Unique Log in for each player to play under their own profile
+- Players standings
+- Results of all completed rounds with points earned
+- A place to predict future games
+- Players can also see other players' predictions 
+- History of the game
+- All players are described in details in their own section
 
-- farba buttonu sa nezmeni na zelenu
-- ak pouzivatel zada zle meno, vyskoci hlaska. Ak potom zada spravne, hlaska je stale tam
-- zmenit v navbare Players --> Superhrdinovia
-- ak sa uz tipne, chcem aby ostalo NATIPOVANE!
+## Technologies Used
 
-## ON MIND
+- **Frontend**: HTML, CSS, JavaScript (React)
+- **Backend**: Node.js, Express.js
+- **Deployment**: Azure
+- **Version Control**: Git, GitHub
 
-### RULES - game
+## Installation
 
-1. tip vitaza/vysledok
-2. tip na strelca
-3. tipovanie celej tabulky
+To run the project locally, follow these steps:

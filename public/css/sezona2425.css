@@ -30,6 +30,7 @@ body {
 .text_container {
   margin-top: 50px;
   margin: 20px;
+  
 }
 
 .text_container p {
@@ -54,6 +55,12 @@ margin: 15px;
 
 .text_container .info_text {
   text-align: justify;
+}
+
+/* - - - - - - Odmena - - - - - - - - -  */
+
+.odmena_container{
+  margin-top: -1.4em !important;
 }
 
 /* - - - - - - Buttons - - - - - - - - -  */
@@ -94,8 +101,13 @@ margin: 15px;
 
 @media (min-width: 1440px) {
 
+ 
   /* - - - - - - Uvodny text - - - - - - - - -  */
-
+.text_container {
+  margin-top: 50px !important;
+  margin-bottom: -30px !important;
+  margin: 100px;
+}
 
 .text_container .uvod {
   color: white;
@@ -121,8 +133,9 @@ margin: 15px;
 /* - - - - - - - - - - - - - - - - - ODMENA - - - - - - - - - - - - - - - */
 
 .odmena_container{
-  margin-top: 50px;
-  margin: 20px;
+  margin-bottom: 50px !important;
+  margin-top: 20px;
+  margin: 3em;
   border: 2px solid white;
   border-radius: 20px;
   -webkit-border-radius: 20;
@@ -150,4 +163,19 @@ margin: 15px;
   font-size: 20px;
   text-align: center;
   list-style-position: inside;
+}
+
+/* - - - - - - - - - - - - - - - - - BUTTONS - - - - - - - - - - - - - - - */
+
+.tabulka{
+  margin-left: 80px;
+}
+
+.zapasy{
+  margin-left: 80px;
+}
+
+.urychleny-zaver{
+  margin-left: 80px;
+  margin-bottom: 100px;
 }

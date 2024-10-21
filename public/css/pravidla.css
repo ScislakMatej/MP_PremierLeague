@@ -74,3 +74,38 @@ margin: 20px;
   color: white;
   margin: 15px;
 }
+
+.regular-tips{
+  margin: 1em;
+  padding: 1em;
+  border: 2px solid white;
+  border-radius: 20px;
+  -webkit-border-radius: 20;
+  -moz-border-radius: 20;
+  -ms-border-radius: 20;
+  -o-border-radius: 20;
+}
+
+.sporadic-tips{
+  margin: 1em;
+  padding: 1em;
+  border: 2px solid white;
+  border-radius: 20px;
+  -webkit-border-radius: 20;
+  -moz-border-radius: 20;
+  -ms-border-radius: 20;
+  -o-border-radius: 20;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - MACBOOK - - - - - - - - - - - - - - - */
+
+@media (min-width: 1440px) {
+
+ 
+  /* - - - - - - Uvodny text - - - - - - - - -  */
+.main_container {
+  margin-top: 50px !important;
+  margin-bottom: 150px !important;
+  margin: 100px;
+}
+}

@@ -1,0 +1,41 @@
+🦸🏻‍♂️: Matelko, ⚽️: NEW-MCI, 📊: 2, Barnes
+🦸🏻‍♂️: Patres, ⚽️: NEW-MCI, 📊: 2, Foden
+🦸🏻‍♂️: Kiko, ⚽️: NEW-MCI, 📊: 2, Silva
+
+
+🦸🏻‍♂️: Matelko, ⚽️: ars-lei_TP, 📊: 1, Jesus
+🦸🏻‍♂️: Patres, ⚽️: ars-lei_TP, 📊: 1, Havertz
+🦸🏻‍♂️: Kiko, ⚽️: ars-lei_TP, 📊: 1, Saka
+
+🦸🏻‍♂️: Matelko, ⚽️: BRE-WHU, 📊: 2, Kudus
+🦸🏻‍♂️: Patres, ⚽️: BRE-WHU, 📊: X, Bowen
+🦸🏻‍♂️: Kiko, ⚽️: BRE-WHU, 📊: X, Mbuemo
+
+🦸🏻‍♂️: Matelko, ⚽️: CHE-BRI, 📊: 1X, Nkunku
+🦸🏻‍♂️: Patres, ⚽️: CHE-BRI, 📊: 1, Jackson
+🦸🏻‍♂️: Kiko, ⚽️: CHE-BRI, 📊: 1, Palmer
+
+🦸🏻‍♂️: Matelko, ⚽️: EVE-CRY, 📊: 2, Eze
+🦸🏻‍♂️: Patres, ⚽️: EVE-CRY, 📊: 2, Nketiah
+🦸🏻‍♂️: Kiko, ⚽️: EVE-CRY, 📊: 2, Mateta
+
+🦸🏻‍♂️: Matelko, ⚽️: NOT-FUL, 📊: 1X, Wood
+🦸🏻‍♂️: Patres, ⚽️: NOT-FUL, 📊: 2, Jimenez
+🦸🏻‍♂️: Kiko, ⚽️: NOT-FUL, 📊: 1X, Elanga
+
+🦸🏻‍♂️: Matelko, ⚽️: WOL-LIV, 📊: 2, Cunha
+🦸🏻‍♂️: Patres, ⚽️: WOL-LIV, 📊: 2, Salah
+🦸🏻‍♂️: Kiko, ⚽️: WOL-LIV, 📊: 2, Diaz
+
+🦸🏻‍♂️: Matelko, ⚽️: IPS-AST, 📊: 2, Rogers
+🦸🏻‍♂️: Patres, ⚽️: IPS-AST, 📊: 1, Delep
+🦸🏻‍♂️: Kiko, ⚽️: IPS-AST, 📊: ???
+
+🦸🏻‍♂️: Matelko, ⚽️: MUN-TOT, 📊: ???
+🦸🏻‍♂️: Patres, ⚽️: MUN-TOT, 📊: 1, Zirkzee
+🦸🏻‍♂️: Kiko, ⚽️: MUN-TOT, 📊: 1, Bruno
+
+
+🦸🏻‍♂️: Matelko, ⚽️: bou-sou_TP, 📊: 1, Tavernier, ⏱️: 30.09.2024, 16:51:03
+🦸🏻‍♂️: Kiko, ⚽️: bou-sou_TP, 📊: 1,evanilson, ⏱️: 30.09.2024, 19:19:42
+🦸🏻‍♂️: Patres, ⚽️: bou-sou_TP, 📊: 1, Semenyo, ⏱️: 30.09.2024, 19:50:37
