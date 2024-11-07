@@ -227,10 +227,12 @@ body {
 
 .tabulka .table {
  margin: 0 20px;
+ height: 200px;
  border-collapse: separate; 
     border-spacing: 0; 
     border-radius: 10px; 
     overflow: hidden; 
+
 }
 
 .tabulka .table td {
@@ -252,6 +254,7 @@ body {
   margin: 10px;
   margin-top: 10px;
   margin-right: 50px;
+  margin-bottom: 4em;
 }
 
 .small-width{
