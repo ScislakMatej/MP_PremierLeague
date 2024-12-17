@@ -1,0 +1,104 @@
+body {
+  background-color: #10162F;
+  filter: brightness(80%);
+}
+
+
+/* - - - - - - NAVBAR - - - - - - - - -  */
+.navbar {
+background-color: #f8f9fa; /* Vaša preferovaná farba */
+background: transparent;
+}
+
+.navbar-nav .nav-link {
+color: black;
+font-size: 1.3em;
+}
+
+.navbar-brand {
+color: black;
+font-size: 1.4em;
+font-weight: bold;
+}
+
+/*.navbar-nav .nav-link:not(:first-child) {
+margin-left: 1em; 
+}*/
+
+
+/* - - - - - - uvod - - - - - - */
+.uvod {
+  color: #f8f9fa;
+  font-size: 1em;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.uvod h1 {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+
+.logo {
+  width: 330px;
+  height: 350px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 20px;
+  -webkit-border-radius: 20;
+  -moz-border-radius: 20;
+  -ms-border-radius: 20;
+  -o-border-radius: 20;
+}
+
+/* - - - - - -  button - - - - - - */
+.btn-lg {
+  background-color: #f8f9fa;
+  color: black;
+  border: 2px solid transparent;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 25px;  /* Zaoblené rohy */
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-lg::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: #f8f9fa;
+  /*Podsvietenie*/transition: all 2s ease;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.btn-lg:hover {
+  color: black; /* Zmena textu na biely */
+  background-color: gold; /* Zmena pozadia na modré */
+}
+
+.btn-lg:hover::before {
+  opacity: 1;
+  width: 0;
+  height: 0;
+}
+
+
+
+
+

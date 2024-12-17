@@ -55,6 +55,7 @@
         <a href="11round.html" type="button" class="btn btn-light next-button"> Nasledujúce kolo ➡️</a>
     </div>
 
+<!--
     <div class="tabulka">
         <table class="table">
             <tbody>
@@ -209,136 +210,388 @@
             </tbody>
         </table> 
     </div>
+-->
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Načítanie užívateľského mena a ďalšie úpravy
-            const username = localStorage.getItem('username');
-            console.log('Loaded username from localStorage:', username); // Výpis užívateľského mena
-            window.username = username;
-    
-            const userNameElement = document.getElementById('user-name');
-            if (userNameElement) {
-                userNameElement.innerText = username || 'Neprihlášený';
-            }
-    
-            const inputs = document.querySelectorAll('input[type="text"]');
-            inputs.forEach(input => {
-                const inputId = input.id;
-                const inputText = localStorage.getItem(`${username}-${inputId}-value`);
-                const buttonState = localStorage.getItem(`${username}-${inputId}-state`);
-                console.log(`Loaded data for ${inputId}:`, { inputText, buttonState }); // Výpis načítaných údajov
-    
-                if (inputText) {
-                    input.placeholder = inputText;
-                }
-    
-                if (buttonState === 'saved') {
-                    const button = document.querySelector(`#${inputId}_B`);
-                    if (button) {
-                        button.classList.add('btn-natipovane');
-                        button.innerText = 'Natipované!';
-                    }
-                }
-            });
-    
-            // Pridanie udalosť na kliknutie pre tlačidlo načítania súboru
-            const loadFileBtn = document.getElementById('load-file-btn');
-            const fileContent = document.getElementById('file-content');
-            const sourceFileInput = document.getElementById('source-file');
-    
-            if (loadFileBtn && fileContent && sourceFileInput) {
-                loadFileBtn.addEventListener('click', () => {
-                    const sourceFile = sourceFileInput.value;
-                    if (!sourceFile) {
-                        console.error('Source file identifier is missing');
-                        return;
-                    }
-                    console.log('Source file identifier:', sourceFile);
-    
-                    const url = `/file/${sourceFile}.txt`; // URL pre načítanie súboru
-                    console.log('Fetching from URL:', url);
-    
-                    fetch(url)
-                        .then(response => {
-                            if (!response.ok) {
-                                throw new Error(`HTTP error! Status: ${response.status}`);
-                            }
-                            return response.text();
-                        })
-                        .then(text => {
-                            fileContent.value = text; // Zobrazenie obsahu v textarea
-                        })
-                        .catch(error => {
-                            console.error('Error fetching file:', error);
-                        });
-                });
-            }
-        });
-    
-        function submitRow(inputId, button) {
-            if (!window.username) {
-                alert('Musíte sa prihlásiť, abyste mohli tipovať!');
-                return;
-            }
-    
-            console.log('Submitting data for:', window.username); // Výpis užívateľského mena pri odosielaní údajov
-    
-            const input = document.getElementById(inputId);
-            const text = input.value;
-            const sourceFile = document.getElementById('source-file').value;
-    
-            if (!text) {
-                alert('Dačo si tipni aspoň, prázdne pole je nuda!');
-                return;
-            }
-    
-            const now = new Date();
-            const day = String(now.getDate()).padStart(2, '0');
-            const month = String(now.getMonth() + 1).padStart(2, '0');
-            const year = now.getFullYear();
-            const hours = String(now.getHours()).padStart(2, '0');
-            const minutes = String(now.getMinutes()).padStart(2, '0');
-            const seconds = String(now.getSeconds()).padStart(2, '0');
-            const formattedDateTime = `${day}.${month}.${year}, ${hours}:${minutes}:${seconds}`;
-    
-            const data = {
-                user: window.username,
-                id: inputId,
-                text: text,
-                timestamp: formattedDateTime,
-                sourceFile: sourceFile
-            };
-    
-            console.log('Data to be sent:', data); // Výpis údajov, ktoré budú odoslané
-    
-            fetch('/submit', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify([data])
-            })
-            .then(response => response.json())
-            .then(data => {
-                console.log('Success:', data);
-                alert('Data submitted successfully from ' + inputId);
-                button.classList.add('btn-natipovane');
-                button.innerText = 'Natipované!';
-                input.placeholder = text;
-                input.value = '';
-    
-                localStorage.setItem(`${window.username}-${inputId}-value`, text);
-                localStorage.setItem(`${window.username}-${button.id}-state`, 'saved');
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
-        }
-    </script>
+<div id="carouselExample" class="carousel slide carousel-wrapper">
+    <div class="carousel-inner">
 
-    <!-- <script src="/js/all.js"></script>
-    <script src="/js/home.js"></script> -->
+      <div class="carousel-item active">
+        <div class="vysledna_tabulka">
+            <div class="carousel-superhrdina">
+                <p> &nbsp MATELKO 🦅 <br> &nbsp; 16pts, 2s</p>
+            </div>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td colspan="7" style="text-align: center; font-size: 30px; font-weight: bold; background-color: gold;">
+                            SOBOTA 2.11.2024
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">2.11. ----- 13:30</td>
+                        <td> <br><b>NEW 🏰</b></td>
+                        <td class="small-width"> <br>1:0</td>
+                        <td> <br><b>ARS 🔴</b></td>
+                        <td> <br>2, Gabriel</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">2.11. ----- 16:00</td>
+                        <td> <br><b>BOU 🍒</b></td>
+                        <td class="small-width"> <br>2:1</td>
+                        <td> <br><b>MCI 🩵</b></td>
+                        <td> <br>2, Gvardiol</td>
+                        <td> <br>❌✅</td>
+                        <td> <br>5b</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">19.10. ----- 21:00</td>
+                        <td> <br><b>IPS 🐎</b></td>
+                        <td class="small-width"> <br>1:1</td>
+                        <td> <br><b>LEI 🦊</b></td>
+                        <td> <br>1, Delap</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕 </td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">2.11. ----- 16:00</td>
+                        <td> <br><b>LIV 🔴</b></td>
+                        <td class="small-width"> <br>2:1</td>
+                        <td> <br><b>BRI 🕊️</b></td>
+                        <td> <br>1, Gakpo</td>
+                        <td> <br>✅✅</td>
+                        <td> <br>5b 🏴‍☠️</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">2.11. ----- 16:00</td>
+                        <td> <br><b>NOT 🌳</b></td>
+                        <td class="small-width"> <br>3:0</td>
+                        <td> <br><b>WHU ⚒️</b></td>
+                        <td> <br>X, Bowen</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕 </td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">2.11. ----- 16:00</td>
+                        <td> <br><b>SOU ✝️</b></td>
+                        <td class="small-width"> <br>1:0</td>
+                        <td> <br><b>EVE 🔵</b></td>
+                        <td> <br>X, DCL</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕 </td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">2.11. ----- 18:30</td>
+                        <td> <br><b>WOL 🐺</b></td>
+                        <td class="small-width"> <br>2:2</td>
+                        <td> <br><b>CRY 🦅</b></td>
+                        <td> <br>2, Nketiah</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕 </td>
+                    </tr>
+                    <tr>
+                        <td colspan="7" style="text-align: center; font-size: 30px; font-weight: bold; background-color: gold;">
+                            NEDEĽA 3.11.2024
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">3.11. ----- 15:00</td>
+                        <td> <br><b>TOT 🐓</b></td>
+                        <td class="small-width"> <br>4:1</td>
+                        <td> <br><b>AST 🦁</b></td>
+                        <td> <br>2, McGinn</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕 </td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">3.11. ----- 17:30</td>
+                        <td> <br><b>MUN 👹</b></td>
+                        <td class="small-width"> <br>1:1</td>
+                        <td> <br><b>CHE 🔵</b></td>
+                        <td> <br>X, Palmer</td>
+                        <td> <br>✅❌</td>
+                        <td> <br>3b </td>
+                    </tr>
+                    <tr>
+                        <td colspan="7" style="text-align: center; font-size: 30px; font-weight: bold; background-color: gold;">
+                            PONDELOK 4.11.2024
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">4.11. ----- 21:00</td>
+                        <td> <br><b>FUL ⚫️</b></td>
+                        <td class="small-width"> <br>2:1</td>
+                        <td> <br><b>BRE 🐝</b></td>
+                        <td> <br>1, Wissa</td>
+                        <td> <br>✅❌</td>
+                        <td> <br>3b </td>
+                    </tr>
+
+            
+                </tbody>
+            </table>
+          </div>
+      </div>
+
+
+      <div class="carousel-item">
+        <div class="vysledna_tabulka">
+            <div class="carousel-superhrdina">
+                <p> &nbsp PATRES 🔴 <br> &nbsp; 14pts, 2s</p>
+            </div>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td colspan="7" style="text-align: center; font-size: 30px; font-weight: bold; background-color: gold;">
+                            SOBOTA 2.11.2024
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">2.11. ----- 13:30</td>
+                        <td> <br><b>NEW 🏰</b></td>
+                        <td class="small-width"> <br>1:0</td>
+                        <td> <br><b>ARS 🔴</b></td>
+                        <td> <br>2, Saka</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">2.11. ----- 16:00</td>
+                        <td> <br><b>BOU 🍒</b></td>
+                        <td class="small-width"> <br>2:1</td>
+                        <td> <br><b>MCI 🩵</b></td>
+                        <td> <br>2, Foden</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">19.10. ----- 21:00</td>
+                        <td> <br><b>IPS 🐎</b></td>
+                        <td class="small-width"> <br>1:1</td>
+                        <td> <br><b>LEI 🦊</b></td>
+                        <td> <br>1, Vardy</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕 </td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">2.11. ----- 16:00</td>
+                        <td> <br><b>LIV 🔴</b></td>
+                        <td class="small-width"> <br>2:1</td>
+                        <td> <br><b>BRI 🕊️</b></td>
+                        <td> <br>1, Szobo</td>
+                        <td> <br>✅❌</td>
+                        <td> <br>3b </td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">2.11. ----- 16:00</td>
+                        <td> <br><b>NOT 🌳</b></td>
+                        <td class="small-width"> <br>3:0</td>
+                        <td> <br><b>WHU ⚒️</b></td>
+                        <td> <br>1, Odoi</td>
+                        <td> <br>✅✅</td>
+                        <td> <br>3b </td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">2.11. ----- 16:00</td>
+                        <td> <br><b>SOU ✝️</b></td>
+                        <td class="small-width"> <br>1:0</td>
+                        <td> <br><b>EVE 🔵</b></td>
+                        <td> <br>1, Archer</td>
+                        <td> <br>✅❌</td>
+                        <td> <br>3b </td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">2.11. ----- 18:30</td>
+                        <td> <br><b>WOL 🐺</b></td>
+                        <td class="small-width"> <br>2:2</td>
+                        <td> <br><b>CRY 🦅</b></td>
+                        <td> <br>1, Cunha</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕 </td>
+                    </tr>
+                    <tr>
+                        <td colspan="7" style="text-align: center; font-size: 30px; font-weight: bold; background-color: gold;">
+                            NEDEĽA 3.11.2024
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">3.11. ----- 15:00</td>
+                        <td> <br><b>TOT 🐓</b></td>
+                        <td class="small-width"> <br>4:1</td>
+                        <td> <br><b>AST 🦁</b></td>
+                        <td> <br>X, Romero</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕 </td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">3.11. ----- 17:30</td>
+                        <td> <br><b>MUN 👹</b></td>
+                        <td class="small-width"> <br>1:1</td>
+                        <td> <br><b>CHE 🔵</b></td>
+                        <td> <br>X, Fernandes</td>
+                        <td> <br>✅✅</td>
+                        <td> <br>5b </td>
+                    </tr>
+                    <tr>
+                        <td colspan="7" style="text-align: center; font-size: 30px; font-weight: bold; background-color: gold;">
+                            PONDELOK 4.11.2024
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">4.11. ----- 21:00</td>
+                        <td> <br><b>FUL ⚫️</b></td>
+                        <td class="small-width"> <br>2:1</td>
+                        <td> <br><b>BRE 🐝</b></td>
+                        <td> <br>???</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕 </td>
+                    </tr>
+
+                
+                    
+                </tbody>
+            </table>
+          </div>
+      </div>
+
+
+      <div class="carousel-item">
+        <div class="vysledna_tabulka">
+            <div class="carousel-superhrdina">
+                <p> &nbsp KIKO 👹 <br> &nbsp; 8pts, 2s</p>
+            </div>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td colspan="7" style="text-align: center; font-size: 30px; font-weight: bold; background-color: gold;">
+                            SOBOTA 2.11.2024
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">2.11. ----- 13:30</td>
+                        <td> <br><b>NEW 🏰</b></td>
+                        <td class="small-width"> <br>1:0</td>
+                        <td> <br><b>ARS 🔴</b></td>
+                        <td> <br>2, Havertz</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">2.11. ----- 16:00</td>
+                        <td> <br><b>BOU 🍒</b></td>
+                        <td class="small-width"> <br>2:1</td>
+                        <td> <br><b>MCI 🩵</b></td>
+                        <td> <br>2, Silva</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">19.10. ----- 21:00</td>
+                        <td> <br><b>IPS 🐎</b></td>
+                        <td class="small-width"> <br>1:1</td>
+                        <td> <br><b>LEI 🦊</b></td>
+                        <td> <br>2, Mavididi</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕 </td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">2.11. ----- 16:00</td>
+                        <td> <br><b>LIV 🔴</b></td>
+                        <td class="small-width"> <br>2:1</td>
+                        <td> <br><b>BRI 🕊️</b></td>
+                        <td> <br>1, Salah</td>
+                        <td> <br>✅✅</td>
+                        <td> <br>3b </td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">2.11. ----- 16:00</td>
+                        <td> <br><b>NOT 🌳</b></td>
+                        <td class="small-width"> <br>3:0</td>
+                        <td> <br><b>WHU ⚒️</b></td>
+                        <td> <br>X, Wood</td>
+                        <td> <br>❌✅</td>
+                        <td> <br>2b 🏴‍☠️</td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">2.11. ----- 16:00</td>
+                        <td> <br><b>SOU ✝️</b></td>
+                        <td class="small-width"> <br>1:0</td>
+                        <td> <br><b>EVE 🔵</b></td>
+                        <td> <br>X, McNeil</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕 </td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">2.11. ----- 18:30</td>
+                        <td> <br><b>WOL 🐺</b></td>
+                        <td class="small-width"> <br>2:2</td>
+                        <td> <br><b>CRY 🦅</b></td>
+                        <td> <br>2, Mateta</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕 </td>
+                    </tr>
+                    <tr>
+                        <td colspan="7" style="text-align: center; font-size: 30px; font-weight: bold; background-color: gold;">
+                            NEDEĽA 3.11.2024
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">3.11. ----- 15:00</td>
+                        <td> <br><b>TOT 🐓</b></td>
+                        <td class="small-width"> <br>4:1</td>
+                        <td> <br><b>AST 🦁</b></td>
+                        <td> <br>???</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕 </td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">3.11. ----- 17:30</td>
+                        <td> <br><b>MUN 👹</b></td>
+                        <td class="small-width"> <br>1:1</td>
+                        <td> <br><b>CHE 🔵</b></td>
+                        <td> <br>1, Garnacho</td>
+                        <td> <br>❌❌</td>
+                        <td> <br>🖕 </td>
+                    </tr>
+                    <tr>
+                        <td colspan="7" style="text-align: center; font-size: 30px; font-weight: bold; background-color: gold;">
+                            PONDELOK 4.11.2024
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="medium-width">4.11. ----- 21:00</td>
+                        <td> <br><b>FUL ⚫️</b></td>
+                        <td class="small-width"> <br>2:1</td>
+                        <td> <br><b>BRE 🐝</b></td>
+                        <td> <br>1, Mbuemo</td>
+                        <td> <br>✅❌</td>
+                        <td> <br>3b </td>
+                    </tr>
+
+
+                
+                    
+                </tbody>
+            </table>
+          </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+    
+
+    <script src="/js/round.js"></script>
+    <script src="/js/home.js"></script> 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

@@ -22,17 +22,12 @@
             <a class="nav-link" href="/big4.html">Superhrdinovia 🦸🏻‍♂️</a>
             <a class="nav-link" href="/historia.html">História ⏳</a>
           </div>
-
-
           <div class="ms-auto d-flex align-items-center">
-            <div id="user-profile" class="dropdown">
-              <span id="user-name" class="me-3"></span>
-              <!-- Tlačidlo na odhlásenie -->
+            <div id="user-profile" class="dropdown" style="display: none;">
+              <span id="user-name" class="me-5"></span>
               <button id="logout" class="btn btn-danger">Odhlásiť sa</button>
             </div>
           </div>
-          
-          
         </div>
       </div>
     </nav>
@@ -42,6 +37,7 @@
       <p class="title">Pravidlá</p>
 
     </div>
+    
 
     <div class="main_container">
 
@@ -75,7 +71,6 @@
               <ul>
                 <li>Priamy tip (1/X/2) - <b>3 body</b></li>
                 <li>Tip s poistením (1X/12/2X) - <b>1 bod</b></li>
-                <li>Presný výsledok zápasu - <b>5 bodov</b></li>
               </ul>
             </p>
             <br><br>
@@ -107,7 +102,7 @@
                   Ak tipér natipuje obrancu, ktorý sa presadí ako prvý, ostatným hráčom budú <b>body ukradnuté</b>. </p>
                 <p style="font-size: small;">(dodatok platí od 9. kola)</p>
 
-                  <br><br>
+               
         </div>
           <hr style="border: none; border-top: 3px solid white;"/>
                 <br>
@@ -132,12 +127,15 @@
             Prečo zadarmo? 🤔
             <br><br>
             V každej ďalšej časti (10., 20. a 30. kolo) tipér znova tipuje celkové poradie tímov v tabuľke na konci sezóny.
-            V týchto tipoch sa však zohľadňuje nástrel, ktorý tipér zadal v 1. kole.
-            <br><br>
-            Tipér môže meniť pozíciu každého tímu <b>maximálne o 2 pozície nadol/nahor</b> v porovnaní
-            s tabuľkou z predchádzajúcej časti.
-            Za každú zmenu sa Superhrdinovi strháva <b>1 bod</b> z celkového skóre.
-            Na konci sezóny sa porovná tabuľka natipovaná v 30. kole s tabuľkou na konci sezóny.
+            Každý tím môže byť posunutý na akékoľvek miesto v tabuľke. 
+            Tipérovi sa však strhávajú body za <b>každú zmenenú pozíciu.</b> <br>
+            Body sa strhávajú následovne (za každú zmenenú pozíciu):
+            <ul>
+              <li>10. kolo - <b>0,5 bodu </b></li>
+              <li>20. kolo - <b>1 bod</b></li>
+              <li>30. kolo - <b>2 body</b></li>
+            </ul>
+            
           </p>
         </div>
 
@@ -152,11 +150,11 @@
         </div>
     </div>
 
-    <script src="js/all.js"></script> 
-    <script src="js/home.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-3eeM2WZgZ5B1io6e8W9eFYY9Ol7pO7D95clg5FZCjTZsL9kPpT6uIKUpZfB9/pz6D" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> -->
-    <!-- najnovsi-->  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
+    <script src="js/odhlasovanie_!home.js"></script>
+
+    <script src="js/home.js" defer></script>
+    <script src="js/all.js" defer></script>
+        <!-- najnovsi-->  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+
 </body>
 </html>

@@ -5,6 +5,15 @@ const session = require('express-session');
 const fs = require('fs');
 const moment = require('moment-timezone');
 
+//kontrola prihlasenia pre specificke stranky
+const requireLogin = (req, res, next) => {
+    if (req.session && req.session.user) { // Overuje existenciu aktívnej relácie používateľa
+        next(); // Používateľ je prihlásený, pokračuj
+    } else {
+        res.status(403).send('Prístup zamietnutý. Musíte byť prihlásený.'); // Chyba, ak nie je prihlásený
+    }
+};
+
 // Inicializácia Express
 const app = express();
 app.use(express.json()); // Načítanie JSON údajov
@@ -38,6 +47,7 @@ app.use(session({
     cookie: { secure: false } // Nastavte na false pre HTTP
 }));
 
+
 // Používateľské údaje
 const users = [
     { username: 'Patres', password: 'olekolegunar', name: 'Patres', profilePic: '/images/buni_karticka.jpg' },
@@ -58,7 +68,8 @@ app.get('/pravidla.html', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'pravidla.html'));
 });
 
-app.get('/big4.html', (req, res) => {
+app.get('/big4.html', requireLogin, (req, res) => {
+    console.log('Access granted to /big4.html for user:', req.session.user);
     res.sendFile(path.join(__dirname, 'public', 'big4.html'));
 });
 
@@ -84,19 +95,25 @@ app.post('/login', (req, res) => {
 
 // Endpoint na odhlásenie
 app.post('/logout', (req, res) => {
-    req.session.destroy(err => {
-        if (err) {
-            return res.status(500).json({ success: false });
-        }
-        res.json({ success: true });
+    req.session.destroy((err) => {
+      if (err) {
+        return res.status(500).json({ success: false, message: 'Chyba pri odhlasovaní.' });
+      }
+      res.clearCookie('connect.sid'); // Vyzerať, že používate express-session, takto vymažte cookie
+      res.json({ success: true });
     });
-});
+  });
+  
 
 // Middleware na kontrolu prihlásenia
 app.use((req, res, next) => {
     res.locals.user = req.session.user;
     next();
 });
+
+
+
+
 
 // Endpoint na kontrolu prihlásenia
 app.get('/login/status', (req, res) => {
@@ -114,29 +131,29 @@ const formatDate = (date) => {
 };
 
 // Endpoint na zápis údajov do súboru
-app.post('/submit', (req, res) => {
-    const data = req.body;
-    const sourceFile = data[0]?.sourceFile;
-    const filePath = path.join(__dirname, 'data', `${sourceFile}.txt`);
+    app.post('/submit', (req, res) => {
+        const data = req.body;
+        const sourceFile = data[0]?.sourceFile;
+        const filePath = path.join(__dirname, 'data', `${sourceFile}.txt`);
 
-    if (!data || !data[0] || !data[0].user) {
-        return res.status(400).json({ success: false, message: 'MUSIS SA PRIHLASIT' });
-    }
-
-    const timestamp = formatDate(new Date());
-    const content = data.map(item =>
-        `🦸🏻‍♂️: ${item.user}, ⚽️: ${item.id}, 📊: ${item.text}, ⏱️: ${timestamp}`
-    ).join('\n');
-
-    fs.appendFile(filePath, content + '\n', (err) => {
-        if (err) {
-            console.error('Error writing to file:', err);
-            res.status(500).json({ success: false, message: 'Internal Server Error' });
-        } else {
-            res.status(200).json({ success: true, message: 'Data saved successfully' });
+        if (!data || !data[0] || !data[0].user) {
+            return res.status(400).json({ success: false, message: 'MUSIS SA PRIHLASIT' });
         }
+
+        const timestamp = formatDate(new Date());
+        const content = data.map(item =>
+            `🦸🏻‍♂️: ${item.user}, ⚽️: ${item.id}, 📊: ${item.text}, ⏱️: ${timestamp}`
+        ).join('\n');
+
+        fs.appendFile(filePath, content + '\n', (err) => {
+            if (err) {
+                console.error('Error writing to file:', err);
+                res.status(500).json({ success: false, message: 'Internal Server Error' });
+            } else {
+                res.status(200).json({ success: true, message: 'Data saved successfully' });
+            }
+        });
     });
-});
 
 // Spustenie servera
 const PORT = process.env.PORT || 3008;

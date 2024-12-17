@@ -1,0 +1,153 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const userProfile = document.getElementById('user-profile');
+    const loginForm = document.getElementById('login-form');
+    const logoutBtn = document.getElementById('logout');
+    const errorMessage = document.getElementById('error-message');
+    const userNameSpan = document.getElementById('user-name');
+    const loginContainer = document.getElementById('login_container');
+    const welcomeContainer = document.getElementById('welcome_container');
+    const welcomeText = document.getElementById('welcome_text');
+    const profilePic = document.getElementById('profile-pic');
+  
+    
+  
+    const profilePics = {
+      Patres: 'images/buni_karticka.jpg',
+      Matelko: 'images/matelko.jpeg',
+      Kiko: 'images/kiko.jpeg',
+    };
+  
+    function getProfilePic(username) {
+      return profilePics[username] || '';
+    }
+  
+    function checkElements() {
+      if (!userProfile || !loginContainer || !welcomeContainer || !userNameSpan || !welcomeText || !profilePic) {
+          console.error('One or more elements are missing');
+          return false;
+      }
+      return true;
+    }
+  
+    function updateUserProfile(data) {
+      if (!userProfile) {
+        console.error('userProfile element is missing');
+        return;
+      }
+      userProfile.style.display = data.success ? 'flex' : 'none';
+      logoutBtn.style.display = data.success ? 'inline-block' : 'none'; // Pridajte tento riadok
+  
+    }
+  
+    function updateLoginContainer(data) {
+      if (!loginContainer) {
+        console.error('loginContainer element is missing');
+        return;
+      }
+      loginContainer.style.display = data.success ? 'none' : 'block';
+    }
+  
+    function updateWelcomeContainer(data) {
+      if (!welcomeContainer) {
+        console.error('welcomeContainer element is missing');
+        return;
+      }
+      welcomeContainer.style.display = data.success ? 'block' : 'none';
+    }
+  
+    function updateUserNameSpan(data) {
+      if (!userNameSpan) {
+        console.error('userNameSpan element is missing');
+        return;
+      }
+      userNameSpan.textContent = data.success ? data.user.name : '';
+    }
+  
+    function updateProfilePic(data) {
+      if (!profilePic) {
+        console.error('profilePic element is missing');
+        return;
+      }
+      if (data.user && data.user.name) {
+        const profilePicUrl = getProfilePic(data.user.name);
+        if (profilePicUrl) {
+          profilePic.src = profilePicUrl;
+          profilePic.style.display = 'block';
+        } else {
+          profilePic.style.display = 'none';
+        }
+      } else {
+        profilePic.style.display = 'none';
+      }
+    }
+  
+    function updateProfile(data) {
+      console.log('Update Profile Data:', data); // Debugging output
+  
+      if (!checkElements()) {
+        return;
+      }
+      updateUserProfile(data);
+      updateLoginContainer(data);
+      updateWelcomeContainer(data);
+      updateUserNameSpan(data);
+      updateProfilePic(data);
+      
+     
+  
+    } // Add this closing brace for the updateProfile function
+  
+    function checkLoginStatus() {
+      fetch('/login/status', { method: 'GET', credentials: 'include' })
+        .then(response => response.json())
+        .then(data => {
+          updateProfile(data);
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          errorMessage.innerText = 'Chyba pri komunikácii so serverom.';
+        });
+    }
+  
+
+  
+
+  
+    if (logoutBtn) {
+      logoutBtn.addEventListener('click', function() {
+        fetch('/logout', { method: 'POST', credentials: 'include' })
+          .then(response => response.json())
+          .then(data => {
+            if (data.success) {
+              localStorage.removeItem('username');
+              localStorage.removeItem('profilePic');
+              sessionStorage.removeItem('username');
+              updateProfile({ success: false });
+  
+              // Presmerovanie na stránku home.html
+              window.location.href = '/home.html';
+            } else {
+              errorMessage.innerText = 'Chyba pri odhlasovaní.';
+            }
+          })
+          .catch(error => {
+            console.error('Error:', error);
+            errorMessage.innerText = 'Chyba pri komunikácii so serverom.';
+          });
+      });
+    } else {
+      console.error('Logout button element is missing');
+    }
+  
+    checkLoginStatus(); // Inicializácia stavu prihlásenia pri načítaní stránky
+  
+    // Vymažte údaje z localStorage alebo sessionStorage pri zatvorení stránky
+    window.addEventListener('beforeunload', function() {
+      localStorage.removeItem('username');
+      localStorage.removeItem('profilePic');
+      sessionStorage.removeItem('username'); // Ak používate sessionStorage
+    });
+  
+  
+  });
+  

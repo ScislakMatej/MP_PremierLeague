@@ -7,8 +7,29 @@ document.addEventListener('DOMContentLoaded', function() {
     const welcomeText = document.getElementById('welcome_text');
 
     function updateProfile(data) {
-        if (!userProfile || !loginContainer || !welcomeContainer || !userNameSpan || !profilePic || !welcomeText) {
-            console.error('One or more elements are missing in updateProfile');
+    
+        if (!userProfile) {
+            console.error('userProfile element is missing in updateProfile');
+            return;
+        }
+        if (!loginContainer) {
+            console.error('loginContainer element is missing in updateProfile');
+            return;
+        }
+        if (!welcomeContainer) {
+            console.error('welcomeContainer element is missing in updateProfile');
+            return;
+        }
+        if (!userNameSpan) {
+            console.error('userNameSpan element is missing in updateProfile');
+            return;
+        }
+        if (!profilePic) {
+            console.error('profilePic element is missing in updateProfile');
+            return;
+        }
+        if (!welcomeText) {
+            console.error('welcomeText element is missing in updateProfile');
             return;
         }
 

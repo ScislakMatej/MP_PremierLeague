@@ -179,3 +179,48 @@ margin: 15px;
   margin-left: 80px;
   margin-bottom: 100px;
 }
+
+/* ------------------------navbar - odhlasenie--------------------------- */
+
+/* Zabezpečí, že elementy v rámci .d-flex sa zobrazia v riadku a budú sa posúvať spoločne */
+#user-profile {
+  display: flex;
+  align-items: center;  /* Vertikálne zarovnanie */
+}
+
+#user-name {
+  font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #10162F, #FF6347); /* Zlatá až červená farba gradientu */
+  -webkit-background-clip: text; /* Aplikovať gradient na text */
+  color: transparent; /* Text sa stane priehľadným a použije gradient ako farbu */
+  margin-right: 10px;
+}
+
+
+/* Tlačidlo odhlásenia */
+#logout {
+  margin-top: 0; /* Odstrániť nežiaduce vertikálne posunutie */
+}
+
+/* Pre mobilné zariadenia a menšie obrazovky */
+@media (max-width: 993px) {
+  /* Zníženie veľkosti písma pre používateľské meno */
+  #user-name {
+    font-size: 16px; /* Zníženie veľkosti písma */
+    margin-right: 8px; /* Zníženie medzery medzi menom a tlačidlom */
+  }
+
+  /* Upravte tlačidlo pre lepšiu prispôsobiteľnosť na menších zariadeniach */
+  #logout {
+    padding: 8px 12px; 
+    font-size: 14px; 
+  }
+
+  /* Môžete prispôsobiť, ak chcete zmeniť usporiadanie na vertikálne na menších zariadeniach */
+  #user-profile {
+    flex-direction: column; /* Zoradí text a tlačidlo vertikálne */
+    align-items: flex-start;  /* Zarovná položky naľavo */
+    margin-top: 10px; /* Pridá trochu medzery medzi používateľom a tlačidlom */
+  }
+}

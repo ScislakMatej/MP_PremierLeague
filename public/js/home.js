@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const welcomeText = document.getElementById('welcome_text');
   const profilePic = document.getElementById('profile-pic');
 
+  
+
   const profilePics = {
     Patres: 'images/buni_karticka.jpg',
     Matelko: 'images/matelko.jpeg',
@@ -134,6 +136,7 @@ document.addEventListener('DOMContentLoaded', function() {
           localStorage.setItem('username', username);
           const profilePicUrl = getProfilePic(username);
           localStorage.setItem('profilePic', profilePicUrl);
+          console.log('Prihlásený používateľ:', username);  // Prekontrolujte, že používateľ je správne uložený
           errorMessage.innerText = ''; // Clear error message on successful login
           checkLoginStatus();
         } else {
@@ -143,11 +146,16 @@ document.addEventListener('DOMContentLoaded', function() {
       .catch(error => {
         console.error('Error:', error);
         errorMessage.innerText = 'Chyba pri komunikácii so serverom.';
-      });
+      }); 
     });
   } else {
     console.error('Login form element is missing');
   }
+
+  function deleteCookies() {
+    document.cookie = 'username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+    document.cookie = 'profilePic=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+}
 
   if (logoutBtn) {
     logoutBtn.addEventListener('click', function() {
@@ -157,6 +165,7 @@ document.addEventListener('DOMContentLoaded', function() {
           if (data.success) {
             localStorage.removeItem('username');
             localStorage.removeItem('profilePic');
+            sessionStorage.removeItem('username');
             updateProfile({ success: false });
 
             // Presmerovanie na stránku home.html
@@ -175,4 +184,13 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   checkLoginStatus(); // Inicializácia stavu prihlásenia pri načítaní stránky
+
+  // Vymažte údaje z localStorage alebo sessionStorage pri zatvorení stránky
+  window.addEventListener('beforeunload', function() {
+    localStorage.removeItem('username');
+    localStorage.removeItem('profilePic');
+    sessionStorage.removeItem('username'); // Ak používate sessionStorage
+  });
+
+
 });
