@@ -50,7 +50,7 @@ app.use(session({
 
 // Používateľské údaje
 const users = [
-    { username: 'Patres', password: 'olekolegunar', name: 'Patres', profilePic: '/images/buni_karticka.jpg' },
+    { username: 'Patres', password: 'patoruzito', name: 'Patres', profilePic: '/images/buni_karticka.jpg' },
     { username: 'Matelko', password: 'limonada', name: 'Matelko', profilePic: '/images/matelko.jpeg' },
     { username: 'Kiko', password: 'viktordraslik', name: 'Kiko', profilePic: '/images/kiko.jpeg' }
 ];

@@ -6,6 +6,49 @@
   margin-top: 40px;
 }
 
+/* - - - - - - Tabulka2 - - - - - - - - -  */
+
+.tabulka2 table {
+  width: 50%; /* Zvýšená šírka pre lepšiu viditeľnosť */
+  border-collapse: collapse;
+  margin: 40px auto; /* Pridaný odstup zhora aj zdola a vycentrovanie */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Jemný tieň pre zvýraznenie tabuľky */
+  border-radius: 10px; /* Zaoblené rohy tabuľky */
+  overflow: hidden; /* Skrátenie obsahu presahujúceho rám */
+  margin-bottom: 3em;
+}
+
+th, td {
+  padding: 10px; /* Zvýšený padding pre lepšiu čitateľnosť */
+  text-align: left;
+  color: #000; /* Nastavenie čiernej farby textu */
+}
+
+.tabulka2 table td:first-child,
+.tabulka2 table th:first-child {
+  padding-left: 20px; /* Nastavenie vnútorného okraja pre prvý stĺpec */
+}
+
+thead th {
+  background-color: #FFD700; /* Zlatá farba pre hlavičku tabuľky */
+  color: #000; /* Čierny text pre kontrast */
+  font-weight: bold;
+  text-transform: uppercase; /* Zvýraznenie hlavičiek veľkými písmenami */
+}
+
+tbody tr {
+  background-color: #ffffff; /* Biela farba pre všetky riadky tela tabuľky */
+}
+
+.tabulka2 p {
+  margin: 20px 0; /* Zachovaný odstup nad a pod odstavcom */
+  font-style: italic; /* Jemne zvýraznený text */
+  text-align: center; /* Zarovnanie textu na stred */
+}
+
+
+
+
 
 /* - - - - - - - - - - - - - - - - - - - - MACBOOK - - - - - - - - - - - - - - - */
 @media (min-width: 993px) {
@@ -355,7 +398,7 @@ width: 105px;
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-  background-color: gold;
+  background-color: gold  ;
 }
 
 .carousel-control-prev-icon {
