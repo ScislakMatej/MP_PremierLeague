@@ -51,9 +51,15 @@ app.use(session({
 // Používateľské údaje
 const users = [
     { username: 'Patres', password: 'patoruzito', name: 'Patres', profilePic: '/images/buni_karticka.jpg' },
-    { username: 'Matelko', password: 'limonada', name: 'Matelko', profilePic: '/images/matelko.jpeg' },
+    { username: 'Matelko', password: 'limonada', name: 'Matelko', profilePic: src="https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/a267/live/f0685d30-eedc-11ec-8935-4f1eb8b88d37.png" },
     { username: 'Kiko', password: 'viktordraslik', name: 'Kiko', profilePic: '/images/kiko.jpeg' }
+    
 ];
+
+app.get('/api/users', (req, res) => {
+    res.json(users);
+});
+
 
 // Definovanie hlavných trás pre HTML stránky
 app.get('/', (req, res) => {
@@ -156,7 +162,7 @@ const formatDate = (date) => {
     });
 
 // Spustenie servera
-const PORT = process.env.PORT || 3008;
+const PORT = process.env.PORT || 3009;
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });

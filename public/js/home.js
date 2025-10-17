@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const profilePics = {
     Patres: 'images/buni_karticka.jpg',
-    Matelko: 'images/matelko.jpeg',
+    Matelko: 'images/crystal.png',
     Kiko: 'images/kiko.jpeg',
   };
 
